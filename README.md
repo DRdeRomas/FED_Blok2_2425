@@ -82,10 +82,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <img src="readme-images/doneer_pagina.png" width="375px" alt="Breakdown van de hele doneer pagina">
 
   ### dynamisch deel (bijv menu): 
-  <img src="readme-images/dropdown_menu.png" width="375px" alt="Breakdown van de dropdown menu">
+  <img src="readme-images/dropdown.png" width="375px" alt="Breakdown van de dropdown menu">
 
   ### wellicht nog een dynamisch deel (bijv filter): 
-  <img src="readme-images/nieuwsberichten.png" width="375px" alt="Breakdown van de filter dropdown menu">
+  <img src="readme-images/filter.png" width="375px" alt="Breakdown van de filter dropdown menu">
 
 </details>
 
