@@ -39,7 +39,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor kick-off werkgroep</summary>
 
   ### Je opdracht:
-  ASKV
+  Mijn gekozen website: ASKV
   <a href="url">https://www.askv.nl/</a>
 
   #### Screenshot(s) van de eerste pagina (small screen): 
