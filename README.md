@@ -39,8 +39,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor kick-off werkgroep</summary>
 
   ### Je opdracht:
-  Mijn gekozen website: ASKV
-  <a href="url">https://www.askv.nl/</a>
+  link naar de website die je gaat namaken óf de naam/omschrijving van je eigen ontwerp
 
   #### Screenshot(s) van de eerste pagina (small screen): 
   hier de naam van de pagina  
@@ -52,7 +51,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
  
 </details>
 
-
+yuh yuh yuh
 
 ## Toegankelijkheidstest 1/2 (week 1)
 
