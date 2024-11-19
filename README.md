@@ -45,14 +45,16 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   #### Screenshot(s) van de eerste pagina (small screen): 
   Home Pagina <br>
   <img src="readme-images/home1.png" width="150px" alt="Eerste screenshot van de home pagina">
-  <img src="readme-images/home2.png" width="150x" alt="Tweede screenshot van de home pagina">
+  <img src="readme-images/home2.png" width="150px" alt="Tweede screenshot van de home pagina">
   <img src="readme-images/home3.png" width="150px" alt="Derde screenshot van de home pagina">
   <img src="readme-images/home4.png" width="150px" alt="Vierde screenshot van de home pagina">
   <img src="readme-images/home5.png" width="150px" alt="Vijfde screenshot van de home pagina">
 
   #### Screenshot(s) van de tweede pagina (small screen):
-  Doneer Pagina
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+  Doneer Pagina <br>
+  <img src="readme-images/doneer1.png" width="150px" alt="Eerste screenshot van de doneer pagina">
+  <img src="readme-images/doneer2.png" width="150px" alt="Tweede screenshot van de doneer pagina">
+  <img src="readme-images/doneer3.png" width="150px" alt="Derde screenshot van de doneer pagina">
  
 </details>
 
