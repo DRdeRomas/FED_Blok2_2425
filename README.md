@@ -43,11 +43,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Link naar de website: https://www.askv.nl/
 
   #### Screenshot(s) van de eerste pagina (small screen): 
-  hier de naam van de pagina  
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+  Home Pagina
+  <img src="readme-images/home1.png" width="375px" alt="Eerste screenshot van de home pagina">
 
   #### Screenshot(s) van de tweede pagina (small screen):
-  hier de naam van de pagina  
+  Doneer Pagina
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
  
 </details>
