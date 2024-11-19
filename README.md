@@ -20,7 +20,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   #### Je startniveau:
   Startniveau: Blauwe piste
-  Coderen vind ik in het algemeen heel erg moeilijk en uitdagend. 
+  <br>Coderen vind ik in het algemeen heel erg moeilijk en uitdagend. 
   Vaak raak ik in de waar of wat ik aan doen ben klopt of niet. 
   Toch ben ik wel bereid om te doen wat ik kan om meer te leren.
 
