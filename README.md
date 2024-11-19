@@ -19,8 +19,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Red de Romas
 
   #### Je startniveau:
-  Startniveau: Blauwe piste
-  <br>Coderen vind ik in het algemeen heel erg moeilijk en uitdagend. 
+  Startniveau: Blauwe piste <br>
+  Coderen vind ik in het algemeen heel erg moeilijk en uitdagend. 
   Vaak raak ik in de waar of wat ik aan doen ben klopt of niet. 
   Toch ben ik wel bereid om te doen wat ik kan om meer te leren.
 
@@ -39,8 +39,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor kick-off werkgroep</summary>
 
   ### Je opdracht:
-  Mijn gekozen website: ASKV
-  Link naar de website: <a href"https://www.askv.nl/"></a>
+  Mijn gekozen website: ASKV <br>
+  Link naar de website: https://www.askv.nl/
 
   #### Screenshot(s) van de eerste pagina (small screen): 
   hier de naam van de pagina  
