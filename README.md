@@ -78,14 +78,14 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na afloop 3<sup>e</sup> werkgroep</summary>
 
   ### de home en de doneer pagina's: 
-  <img src="readme-images/home_pagina.png" width="375px" alt="Breakdown van de hele home pagina">
+  <img src="readme-images/home_pagina.png" width="375px" alt="Breakdown van de hele home pagina"> <br>
   <img src="readme-images/doneer_pagina.png" width="375px" alt="Breakdown van de hele doneer pagina">
 
   ### dynamisch deel (bijv menu): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
+  <img src="readme-images/dropdown_menu.png" width="375px" alt="Breakdown van de dropdown menu">
 
   ### wellicht nog een dynamisch deel (bijv filter): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
+  <img src="readme-images/nieuwsberichten.png" width="375px" alt="Breakdown van de filter dropdown menu">
 
 </details>
 
