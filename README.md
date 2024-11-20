@@ -75,10 +75,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   - H2 en H3 zijn er wel.
   - Veel elementen hebben een koppeling. Deze leiden naar een andere pagina toe. Die zijn wel juist.
   - Het wordt aangegeven waar de links naartoe worden geleid.
-  - De website is erg inconsistent. De structuur en volgorde van de elementen kunnen verbeterd worden.
+  - De website is erg inconsistent. De structuur en volgorde van de elementen kunnen een stuk verbeterd worden.
   - De website heeft geen “dark mode”.
   - De website kan toegankelijker worden voor iedereen.
-
 </details>
 
 
