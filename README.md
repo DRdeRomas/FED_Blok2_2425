@@ -66,8 +66,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na test in 2<sup>e</sup> werkgroep</summary>
 
   ### Bevindingen
-  Lijst met je bevindingen die in de test naar voren kwamen: <br>
-  - Meeste elementen worden van links naar rechts, van boven naar beneden gelezen door de Voice Narrator. <br>
+  Lijst met je bevindingen die in de test naar voren kwamen:
+  - Meeste elementen worden van links naar rechts, van boven naar beneden gelezen door de Voice Narrator.
   - Sommige tekstelementen worden overgeslagen.
   - De structuur is logisch.
   - De headings worden helemaal NIET gelezen.
