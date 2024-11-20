@@ -66,7 +66,18 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na test in 2<sup>e</sup> werkgroep</summary>
 
   ### Bevindingen
-  Lijst met je bevindingen die in de test naar voren kwamen:
+  Lijst met je bevindingen die in de test naar voren kwamen: <br>
+  - Meeste elementen worden van links naar rechts, van boven naar beneden gelezen door de Voice Narrator. <br>
+  - Sommige tekstelementen worden overgeslagen.
+  - De structuur is logisch.
+  - De headings worden helemaal NIET gelezen.
+  - H1 wordt niet gelezen. Is deze hidden?
+  - H2 en H3 zijn er wel.
+  - Veel elementen hebben een koppeling. Deze leiden naar een andere pagina toe. Die zijn wel juist.
+  - Het wordt aangegeven waar de links naartoe worden geleid.
+  - De website is erg inconsistent. De structuur en volgorde van de elementen kunnen verbeterd worden.
+  - De website heeft geen “dark mode”.
+  - De website kan toegankelijker worden voor iedereen.
 
 </details>
 
@@ -82,10 +93,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <img src="readme-images/doneer_pagina.png" width="375px" alt="Breakdown van de hele doneer pagina">
 
   ### dynamisch deel (bijv menu): 
-  <img src="readme-images/menu.png" width="375px" alt="Breakdown van de hele home pagina"> <br>
+  <img src="readme-images/menu.png" width="375px" alt="Breakdown van de dropdown menu"> <br>
 
   ### wellicht nog een dynamisch deel (bijv filter): 
-  <img src="readme-images/filter.png" width="375px" alt="Breakdown van de hele home pagina"> <br>
+  <img src="readme-images/filter.png" width="375px" alt="Breakdown van de filteropties in de nieuwsberichten pagina"> <br>
 
 </details>
 
