@@ -78,6 +78,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   - De website is erg inconsistent. De structuur en volgorde van de elementen kunnen een stuk verbeterd worden.
   - De website heeft geen “dark mode”.
   - De website kan toegankelijker worden voor iedereen.
+  - Het is niet duidelijk dat de sectie van het laatste nieuws meerdere items nieuwsitems heeft.
 </details>
 
 
@@ -115,7 +116,13 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
+  <!-- | student 1      | student 2          | student 3    | student 4        |
+  | ---            | ---                | ---          | ---              |
+  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
+  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
+  | ...            | ...                | ...          | ...              | -->
+
+  | Jaron      | Casper          | Luca    | Red        |
   | ---            | ---                | ---          | ---              |
   | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
   | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
