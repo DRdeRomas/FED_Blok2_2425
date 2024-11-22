@@ -117,8 +117,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   samen met je groepje opstellen
 
   | Jaron      | Casper          | Luca    | Red        |
-  | ---            | ---                | ---          | Foto's/iconen responsief maken |
-  | dit bespreken  | en dit             | en ik dit    | CSS    |
+  | ---            | ---                | ---          | ---              |
+  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
   | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
   | ...            | ...                | ...          | ...              |
 
