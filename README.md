@@ -110,21 +110,15 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 1<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
-
-
+  - Ik weet niet zo goed of ik mijn HTML-elementen, specifiek de sections juist heb benoemd. Ik weet niet zo goed wanneer ik bijvoorbeeld een article en/of figure moet gebruiken.
+  - Ik zat een beetje vast met hoe ik de fonts juist kon coderen in mijn CSS. Wat is de juiste manier om het te doen? Ik heb meerdere keren gezocht op DLO, maar kon hem nergens vinden.
+  
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  <!-- | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              | -->
-
   | Jaron      | Casper          | Luca    | Red        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
+  | ---            | ---                | ---          | Foto's/iconen responsief maken              |
+  | dit bespreken  | en dit             | en ik dit    | CSS    |
   | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
   | ...            | ...                | ...          | ...              |
 
@@ -155,7 +149,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
+  | Jaron      | Casper          | Luca    | Red        |
   | ---            | ---                | ---          | ---              |
   | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
   | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
@@ -202,7 +196,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
+  | Jaron      | Casper          | Luca    | Red        |
   | ---            | ---                | ---          | ---              |
   | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
   | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |

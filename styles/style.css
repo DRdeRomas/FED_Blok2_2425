@@ -2,9 +2,9 @@
 /* CSS REMEDY */
 /**************/
 *, *::after, *::before {
-  box-sizing:border-box;  
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
 }
-
 
 
 
@@ -15,8 +15,28 @@
 /*********************/
 :root {
 	/* startje */
-	--color-text:#111;
-	--color-background:#eee;
+	--text-color1:#000000;
+	--text-color2: #ffffff;
+
+	--background-color1:#ffffff;
+	--background-color2: #52ae32;
+	--background-color3: #9d9d9d;
+	
+	--banner-background-color: #FFEC00;
+
+	--borderradius-section: 0 20px 20px 20px;
+}
+
+@font-face {
+	font-family: 'Roboto';
+	src: url(fonts/Roboto-Regular.ttf) format('truetype');
+	font-weight: normal;
+}
+
+@font-face{
+	font-family: 'Special Elite';
+	src: url(fonts/SpecialElite-Regular.ttf) format('truetype');
+	font-weight: normal;
 }
 
 
@@ -29,3 +49,31 @@
 
 /* jouw code */
 
+/* h1 {
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	font-family: 'Special Elite';
+} */
+
+nav {
+	display: flex;
+
+}
+
+nav img:nth-of-type(1) {
+	width: 5em;
+}
+
+nav img {
+	width: 20px;
+	height: 20px;
+}
+
+footer section:nth-child(2){
+	color: var(--text-color2);
+	background-color: var(--background-color2);
+}
+
+footer section:nth-child(2) ul li a {
+	list-style-type: none;
+}
