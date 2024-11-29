@@ -2,26 +2,114 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+	<meta name="author" content="Red de Romas">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>ASKV Doneer</title>
+
+	<link href="styles/style2.css" rel="stylesheet">
+	<link rel="icon" type="image/svg+xml" href="images/favicon.svg">
 </head>
 
 <body>
 	<header>
-		<nav>
-			<ul>
-				<li>Wat doen we</li>
-				<li>Kom in actie</li>
-				<li>Over het ASKV</li>
-				<li>Nieuws</li>
-				<li>Contact</li>
-			</ul>
-		</nav>
+		<a href="index.html" aria-label="Home pagina">
+			<img src="images/logo.svg" alt="SVG van ASKV logo"></img>
+		</a>
 	</header>
 
     <main>
+		<h1 class="visually_hidden">Doneer</h1>
+
         <section>
-            <h1>Doneer</h1>
-        </sectioN>
+			<h2>Hoe kan jij helpen?</h2>
+				<h3>Steun ons met jouw donatie!</h3>
+
+			<fieldset>
+				<legend>Ja, ik help mee! *</legend>
+					<label>
+						<input type="radio" name="donatie_type" value="eenmalig"> Eenmalig
+					</label>
+					<label>
+						<input type="radio" name="donatie_type" value="Maandelijks"> Maandelijks
+					</label>
+			</fieldset>
+
+			<fieldset>
+				<legend>Hoeveel wil je doneren? *</legend>
+					<label>
+						<input type="radio" name="donatie_bedrag" value="15"> 15 euros
+					</label>
+					<label>
+						<input type="radio" name="donatie_bedrag" value="30"> 30 euros
+					</label>
+					<label>
+						<input type="radio" name="donatie_bedrag" value="50"> 50 euros
+					</label>
+					<label>
+						<input type="radio" name="donatie_bedrag" value="ander">  Ander bedrag *
+					</label>
+					<input type="number" name="donatie_bedrag" id="aanpassing_bedrag" disabled>
+			</fieldset>
+
+			<p><a href="#">Naar gegevens</a></p>
+			</section>
+
+			<section>
+				<p>Ieder mens heeft recht op juridische bijstand en toegang tot onderwijs, 
+					gezondheidszorg en onderdak. Oók als je je land bent ontvlucht en (nog)
+					geen geldige verblijfsvergunning hebt. Want iedereen in Nederland verdient 
+					een menswaardig bestaan.</p>
+					<p>Kom jij ook in actie</p>
+					<img src="images/cbf.png" alt="Foto van CBF logo">
+					<img src="images/anbi.jpeg" alt="Foto van ANBI logo">
+					<img src="images/doneerfoto.jpeg" alt="Foto van een groep juichende mensen">
+			</section>
+        </section>
+
+		<section>
+			<h2>Met jouw donatie</h2>
+				<ul>
+					<li>Strijden we voor de structurele verbetering van de positie van mensen 
+						zonder verblijfsvergunning met lobby en campagne.
+					</li>
+					<li>Ondersteunen wij mensen zonder verblijfsvergunning zodat ook zij naar 
+						de dokter kunnen, een opleiding kunnen volgen en een thuis hebben.
+					</li>
+				</ul>
+
+			<h2>Liever periodiek schenken met belastingvoordeel?</h2>
+				<p>Voor wie het ASKV structureel wil steunen, bestaat er ook een periodieke 
+				   schenkingsovereenkomst. Deze ga je aan voor minimaal vijf jaar, waarbij je 
+				   een substantieel deel van je gift terugkrijgt van de belastingdienst.</p>
+				<p>Het enige wat je hoeft te doen is <a href="#">de overeenkomst downloaden</a>,
+				   invullen en in een envelop naar onderstaand adres sturen. Wij regelen 
+				   verder alles en je ontvangt uiteraard een bevestiging. 
+				</p>
+				<p>Stichting ASKV <br>
+					Chris Lebeaustraat 4 <br>
+					1062 DC Amsterdam <br>
+				</p>
+				<p>Wil je meer informatie over periodiek schenken? Kijk dan op de website 
+					van de <a href="#">Belastingdienst</a> of neem contact op met ons via 
+					<a href="#">info@askv.nl</a> of <a href="tel:+31206272408">020-6272408</a>.
+				</p>
+				<p>Ons <abbr title="Algemeen Nut Beogende Instelling">ANBI</abbr>- oftewel 
+			       <abbr title="Rechtspersonen en Samenwerkingsverbanden informatienummer">RSIN-nummer</abbr> 
+				   voor een schenking is: 007988680. Je kunt onze ANBI- status hier opzoeken. Vul in 
+				   het zoek scherm ‘Steunpunt Vluchtelingen‘ in (officieel heten we A.S.K.V. \ Steunpunt Vluchtelingen).
+				</p>
+				<p>* Bereken met de <a href="#">Schenkcalculator</a> jouw fiscaal voordeel of bekijk wat je 
+				   extra kunt schenken dankzij het belastingvoordeel. Voor het ASKV biedt 
+				   een schenkingsovereenkomt zekerheid over (toekomstige) inkomsten. 
+				</p>
+				<p>Lees hier onze 
+					<a href="#">privacyverklaring</a>.
+				</p>
+		</section>
     </main>
+
+	<footer>
+		
+	</footer>
 </html>

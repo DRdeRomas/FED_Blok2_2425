@@ -118,8 +118,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   | Jaron      | Casper          | Luca    | Red        |
   | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | Foto's/iconen responsief maken    |
-  | en dat ook nog | dit als er tijd is | nog een punt | CSS |
+  | dit bespreken  | en dit             | en ik dit    | HTML-controleren    |
+  | en dat ook nog | dit als er tijd is | nog een punt | Foto's/iconen responsief maken |
   | ...            | ...                | ...          | ...              |
 
 
@@ -143,16 +143,19 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 2<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  De afgelopen week heb ik een groot deel van de HTML van mijn 2 pagina's af. Ik zit vast met hoe ik de foto's/iconen responsief moet maken. Ik vind het ook uitdagend om mijn website vorm te geven met CSS.
 
+  - Ik heb de logo die als een terugknop dient. Hoe kan ik dit het beste benoemen in mijn HTML?
+  - Ik heb twee elementen als afbeeldingen die ik voor en achter een bepaalde tekst moet zetten. Kan ik die ook toevoegen in mijn CSS of beter in mijn HTML?
+  - Klopt mijn fieldset met opties om te kiezen of kan ik deze beter als buttons benoemen in mijn HTML?
 
   ### Agenda voor meeting
   samen met je groepje opstellen
 
   | Jaron      | Casper          | Luca    | Red        |
   | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
+  | dit bespreken  | en dit             | en ik dit    | Foto's/iconen responsief maken    |
+  | en dat ook nog | dit als er tijd is | nog een punt | Wanneer mag ik divs/classes gebruiken? |
   | ...            | ...                | ...          | ...              |
 
 

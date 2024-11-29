@@ -3,49 +3,57 @@
 	
 <head>
 	<meta charset="UTF-8">
-	<meta name="author" content="jouw naam">
+	<meta name="author" content="Red de Romas">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	
 	<title>ASKV Home</title>
-	
+
 	<link href="styles/style.css" rel="stylesheet">
 	<link rel="icon" type="image/svg+xml" href="images/favicon.svg">
 </head>
 
 <body>
 	<header>
-		<nav>
-			<img src="images/logo.svg" alt="SVG van ASKV logo"></img>
+		<img src="images/logo.svg" alt="SVG van ASKV logo"></img>
 
-			<form action="/search method="get">
-				<label for="email">
-					<input type="text" name="query" placeholder="Zoeken" required>
-				</label>
-				<img src="images/zoeken.svg" alt="Foto van een vergrootglas"></img>
-			</form>
-
-			<ul>
-				<li><a href="#">Wat doen we</a>
-					<img src="images/pijl-rechts1.svg" alt="Foto van pijltje"></li>
-				<li><a href="#">Kom in actie</a>
-					<img src="images/pijl-rechts1.svg" alt="Foto van pijltje"></li>
-				<li><a href="#">Over het ASKV</a>
-					<img src="images/pijl-rechts1.svg" alt="Foto van pijltje"></li>
-				<li><a href="#">Nieuws</a>
-					<img src="images/pijl-rechts1.svg" alt="Foto van pijltje"></li>
-				<li><a href="#">Contact</a>
-					<img src="images/pijl-rechts1.svg" alt="Foto van pijltje"></li>
-			</ul>
-
-			<img src="images/hartlogo.webp" alt="Foto van hartlogo"></img>
+		<form>
+			<label>
+				<input type="search" name="query" placeholder="Zoeken" required>
+				<button aria-label="zoeken">
+					<img src="images/zoeken.svg" alt="Foto van een vergrootglas"></img>
+				</button>
+			</label>
 			
-			<!-- <button>Doneer!</button> -->
+		</form>
+		
+		<nav>
+			<ul>
+				<li>
+					<a href="#">Wat doen we<img src="images/pijltje-beneden.svg" alt=""></a>
+				</li>
+				<li>
+					<a href="#">Kom in actie</a>
+					<img src="images/pijltje-beneden.svg" alt="">
+				</li>
+				<li>
+					<a href="#">Over het ASKV</a>
+					<img src="images/pijltje-beneden.svg" alt="">
+				</li>
+				<li>
+					<a href="#">Nieuws</a>
+				</li>
+				<li>
+					<a href="#">Contact</a>
+				</li>
+			</ul>
 		</nav>
+
+		<img src="images/hartlogo.webp" title="Hulp nodig/Need help?" alt="Foto van hartlogo"></img>
 	</header>
 
 	<main>
-		<section>
-			<h1>Het ASKV</h1>
+		<section class="background">
+			<h1 class="visually_hidden">Het <abbr title="Het Amsterdamse Solidariteits Komitee Vluchtelingen">ASKV</abbr></h1>
 				<p>Het Amsterdams Solidariteits Komitee Vluchtelingen (ASKV) vindt dat ieder mens recht heeft op 
 				   juridische bijstand en toegang tot onderwijs, gezondheidszorg en onderdak. Oók als je nog geen 
 				   verblijfsvergunning hebt en niet kunt of durft terug te keren naar je land van herkomst.</p>
@@ -60,78 +68,101 @@
 				<h3>Hulpverlening</h3>
 					<p>Het ASKV biedt juridische en maatschappelijke 
 					   begeleiding aan mensen zonder verblijfsvergunning.</p>
-					<a href="#Leesmeer">Lees meer</a>
+					<a href="#Leesmeer" aria-label="Lees meer over hulpverlening">Lees meer</a>
 				<h3>Projectenbureau</h3>
 					<p>Het ASKV signaleert problemen en kansen uit de 
 					   praktijk en pakt deze projectmatig aan.</p>
-					<a href="#Leesmeer">Lees meer</a>
+					<a href="#Leesmeer" aria-label="Lees meer over projectenbureau">Lees meer</a>
 				<h3>Medische opvang</h3>
 					<p>Het ASKV biedt medische opvang en begeleiding 
 					   aan mensen zonder verblijfsvergunning.</p>
-					<a href="#Leesmeer">Lees meer</a>
+					<a href="#Leesmeer" aria-label="Lees meer over medische opvang">Lees meer</a>
 				<h3>Lobby en campagne</h3>
 					<p>Het ASKV strijdt met lobby en campagne voor 
 					   een menswaardig asiel- en migratiebeleid.</p>
-					<a href="#Leesmeer">Lees meer</a>
+					<a href="#Leesmeer" aria-label="Lees meer over lobby en campagne">Lees meer</a>
 		</section>
 
 		<section>
 			<h2>Met lobby en campagne strijden wij voor</h2>
 				<ul>
 					<li>Een verblijfsvergunning voor mensen in schrijnende situaties 
-						voor wie alle bestaande procedures geen oplossing bieden;</li>
+						voor wie alle bestaande procedures geen oplossing bieden;
+					</li>
 					<li>Landelijke toegang tot mbo en hoger onderwijs voor jongeren 
-						zonder verblijfsvergunning;</li>
+						zonder verblijfsvergunning;
+					</li>
 					<li>Een opvangketen voor mensen zonder verblijfsvergunning 
-						met ernstige medische problemen;</li>
+						met ernstige medische problemen;
+					</li>
 					<li>Het versterken van een netwerk van professionals en organisaties 
 						om de toegang tot basisrechten voor mensen zonder verblijfsvergunning 
-						te beschermen en te verbeteren;</li>
+						te beschermen en te verbeteren;
+					</li>
 					<li>Betere toegang tot de procedure voor de erkenning van staatloosheid;
-						Een verblijfsvergunning voor erkende staatloze mensen.</li>
+						Een verblijfsvergunning voor erkende staatloze mensen.
+					</li>
 				</ul>
 		</section>
 
 		<section>
-			<h2><a href="doneer.html">Doneer</a></h2>
+			<h2>Kom in actie</h2>
+			<h3><a href="doneer.html">Doneer</a></h3>
+				<img src="images/hartje.svg">
 				<p>Steun ons met jouw gift. Zo kunnen we mensen zonder verblijfsvergunning 
-				   blijven ondersteunen en hun positie structureel verbeteren.</p>
-			<h2><a href="#Wordvrijwilliger">Word vrijwilliger</a></h2>
+				   blijven ondersteunen en hun positie structureel verbeteren.
+				</p>
+			<h3><a href="#Wordvrijwilliger">Word vrijwilliger</a></h3>
+				<img src="images/mensen.svg">
 				<p>Zet je in als vrijwilliger. Alleen met de hulp van vrijwilligers kunnen 
 				   we mensen zonder verblijfsvergunning blijven ondersteunen en hun positie 
-				   structureel verbeteren.</p>
-			<h2><a href="#Blijfopdehoogte">Blijf op de hoogte</a></h2>
+				   structureel verbeteren.
+				</p>
+			<h3><a href="#Blijfopdehoogte">Blijf op de hoogte</a></h3>
+				<img src="images/vliegtuig.svg">
 				<p>Schrijf je in voor onze nieuwsbrief. Zo blijf je op de hoogte van onze 
-				   hulpverlening en acties.</p>
+				   hulpverlening en acties.
+				</p>
 		</section>
 
 		<section>
 			<h2>Kamer zet eerste stap naar veilige zorg voor kwetsbare ongedocumenteerden</h2>
+				<img src="images/askv.jpeg" alt="Foto van de ASKV logo">
+
 				<time datetime="2024-5-11">5 november 2024</time>
 				<p>Vandaag, 5 november 2024, heeft de Tweede Kamer een motie aangenomen over 
 				   kliniek Veldzicht. Deze motie roept de regering op om eerst met oplossingen 
 				   te komen zodat ongedocumenteerden en COA-bewoners met psychische problemen 
 				   niet op straat belanden. ASKV is blij met de aanname van deze motie en 
-				   spreekt van een eerste stap in de goede […]</p>
+				   spreekt van een eerste stap in de goede […]
+				</p>
 				<a href="#Leesmeer">Lees meer</a>
 
 			<h2>Verblijfsvergunning voor Surinaamse oud-Nederlanders</h2>
+				<img src="images/nieuws1.jpeg" alt="Foto van de Surinaamse vlag">
+
 				<time datetime="2024-23-10">23 oktober 2024</time>
 				<p>Vanaf 1 januari 2025 tot 1 juli 2025 kunnen Surinaamse oud-Nederlanders een 
 					verblijfsvergunning aanvragen bij het loket van het ASKV. Vanaf vandaag kunnen 
 					mensen die hier aanspraak op maken bij het ASKV terecht voor ondersteuning bij 
 					het proces om de verblijfsvergunning aan te vragen. De voormalige staatssecretaris 
-					van Justitie en Veiligheid heeft begin dit jaar […]</p>
+					van Justitie en Veiligheid heeft begin dit jaar […]
+				</p>
 				<a href="#Leesmeer">Lees meer</a>
 
 			<h2>Stage Juridisch Casemanager</h2>
+				<img src="images/nieuws2.png" alt="Foto van een schrijvende man">
+
 				<time datetime="2024-11-10">11 oktober 2024</time>
 				<p>Het team Juridische Hulpverlening is op zoek naar een derde- of vierdejaars 
 					hbo-student die stage komt lopen voor minimaal 3 dagen en maximaal 4 dagen 
-					per week. De stage start begin februari […]</p>
+					per week. De stage start begin februari […]
+				</p>
 				<a href="#Leesmeer">Lees meer</a>
 
 			<h2>Stage Maatschappelijke Hulpverlening Activiteiten</h2>
+				<img src="images/nieuws3.webp" alt="Foto van twee mensen aan tafel">
+
 				<time datetime="2024-4-10">4 oktober 2024</time>
 				<p>Het team Maatschappelijke Hulpverlening en Activiteiten van het ASKV is op zoek naar 
 					een derde- of vierdejaars hbo-student die stage komt lopen voor minimaal drie en 
@@ -158,13 +189,24 @@
 
 	<footer>
 		<section>
-			<ul>
-				<li><a href="#"></a></li>
-				<li><a href="#"></a></li>
-				<li><a href="#"></a></li>
-				<li><a href="#"></a></li>
-			</ul>
+			<h2></h2>
+				<ul>
+					<li><a href="#">
+						<img src="images/facebook.svg"></a>
+					</li>
+					<li><a href="#">
+						<img src="images/twitter.svg"></a>
+					</li>
+					<li><a href="#">
+						<img src="images/linkedin.svg"></a>
+					</li>
+					<li><a href="#">
+						<img src="images/instagram.svg"></a>
+					</li>
+				</ul>
+		</section>
 
+		<section>
 			<h2>Neem contact op</h2>
 				<p>Chris Lebeaustraat 4</p>
 				<p>1062 DC Amsterdam</p>
@@ -173,7 +215,9 @@
 				<p>info@askv.nl</p>
 				<p>Het beste is om eerst te bellen</p>
 				<p>Alle contactgegevens</p>
-			
+		</section>
+
+		<section>
 			<h2>Wat we doen</h2>
 				<ul>
 					<li><a href="#Hulpverlening">Hulpverlening</a></li>
@@ -181,27 +225,29 @@
 					<li><a href="#Medischeopvang">Medische opvang</a></li>
 					<li><a href="#Lobbyencampagne">Lobby en campagne</a></li>
 				</ul>
+		</section>
 
+		<section>
 			<h2>Kom in actie</h2>
 				<ul>
 					<li><a href="#Doneer">Doneer</a></li>
 					<li><a href="#Blijfopdehoogte">Blijf op de hoogte</a></li>
 					<li><a href="#Wordvrijwilliger">Word vrijwilliger</a></li>
 				</ul>
-			
-			<img src="#"></img>
-			<img src="#"></img>
 		</section>
-
+			
+			<img src="images/cbf.png"></img>
+			<img src="images/anbi.jpeg"></img>
+		
 		<section>			
 			<p>ASKV</p>
 			<ul>
 				<li><a href="#Cookies">Cookies</a></li>
 				<li><a href="#Privacy">Privacy en gegevensbescherming</a></li>
-			</ul></section>
+			</ul>
+		</section>
 	</footer>
 
 	<script defer src="scripts/script.js"></script>
 </body>
-	
 </html>

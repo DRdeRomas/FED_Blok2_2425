@@ -1,18 +1,22 @@
 /**************/
 /* CSS REMEDY */
 /**************/
+
 *, *::after, *::before {
-  box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
 }
 
-
-
-
+body {
+	font-family: 'Roboto', sans-serif;
+	/* font-family: 'Special Elite', sans-serif; */
+} 
 
 /*********************/
 /* CUSTOM PROPERTIES */
 /*********************/
+
 :root {
 	/* startje */
 	--text-color1:#000000;
@@ -28,52 +32,88 @@
 }
 
 @font-face {
-	font-family: 'Roboto';
-	src: url(fonts/Roboto-Regular.ttf) format('truetype');
-	font-weight: normal;
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Regular.ttf') format('truetype');
+    font-weight: normal;
 }
 
-@font-face{
-	font-family: 'Special Elite';
-	src: url(fonts/SpecialElite-Regular.ttf) format('truetype');
-	font-weight: normal;
+@font-face {
+    font-family: 'Special Elite';
+    src: url('../fonts/SpecialElite.ttf') format('truetype');
+    font-weight: normal;
 }
 
-
-
-
+.visually_hidden {
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+	white-space: nowrap;
+ 	width: 1px;
+}
 
 /****************/
 /* JOUW STYLING */
 /****************/
 
 /* jouw code */
-
-/* h1 {
-	font-family: 'Roboto', sans-serif;
-	font-size: 16px;
-	font-family: 'Special Elite';
-} */
-
-nav {
+/* HEADER */
+header{
 	display: flex;
 
 }
 
-nav img:nth-of-type(1) {
-	width: 5em;
+header img {
+	max-width: 125px;
 }
 
-nav img {
+header form button img {
 	width: 20px;
 	height: 20px;
 }
 
+header > img:last-of-type {
+	width: auto;
+	height: 50px;
+}
+
+/* NAV */
+nav {
+	display: flex;
+}
+
+nav li {
+	list-style: none;
+}
+
+nav a {
+	text-decoration: none;
+}
+
+nav img {
+	width: 9.6px;
+	margin-left: 4px;
+}
+
+
+
+/* SECTION */
+.background {
+	background-image: url(../images/foto1.jpeg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 100vh;
+}
+
+/* FOOTER */
 footer section:nth-child(2){
 	color: var(--text-color2);
 	background-color: var(--background-color2);
 }
 
-footer section:nth-child(2) ul li a {
-	list-style-type: none;
+footer section:nth-child(2) ul li{
+    list-style-type: none;
 }
+
