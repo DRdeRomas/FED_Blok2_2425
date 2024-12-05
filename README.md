@@ -256,7 +256,18 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Nb. Vermeld de bronnen ook in je code.
 
   1. Gebruiken van een link placeholder: https://stackoverflow.com/questions/4855168/what-is-href-and-why-is-it-used
-  2. bron 2
-  3. ...
+  2. Tijd sematisch correct benoemen in het HTML: https://www.w3schools.com/tags/tag_time.asp  
+  3. Input tag op de juiste manier gebruiken: https://www.w3schools.com/tags/tag_input.asp 
+  4. Foto's extracteren: https://extract.pics/
+  5. Gebruiken van een fieldset: https://www.w3schools.com/TAGS/tag_legend.asp  
+  6. Telefoonnummers: https://www.w3docs.com/snippets/html/how-to-add-telephone-links-with-html.html 
+  7. Toegankelijkheid labels: https://www.w3schools.com/accessibility/accessibility_labels.php
+  8. Het gebruiken van ARIA:
+https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA 
+  9. ::before & ::after pseudoelementen: 
+https://youtu.be/zGiirUiWslI?si=XQy3Yh0tfmlm4tF6 
+
+
+
 
 </details>
