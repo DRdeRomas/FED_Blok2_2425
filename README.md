@@ -31,8 +31,6 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 
 
-
-
 ## Je website
 
 <details open>
@@ -99,8 +97,6 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <img src="readme-images/filter.png" width="375px" alt="Breakdown van de filteropties in de nieuwsberichten pagina"> <br>
 
 </details>
-
-
 
 
 
@@ -173,6 +169,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   - Het gebruiken van max-width
 
 </details>
+
+
+
 ## Toegankelijkheidstest 2/2 (week 4)
 
 <details>
@@ -180,10 +179,15 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
+  - De volgorde van de elementen worden juist gelezen van links naar rechts. 
+  - Het is net als de echte website. Het wordt van boven naar beneden gelezen door de Voice Narrator.
+  - Sommige tekstelementen worden overgeslagen, maar het blijkt dat ik simpelweg de juiste commands moet gebruiken om ervoor te zorgen dat de Voice Narrator deze leest. Dus die werkt prima!
+  - De headings worden wel gelezen (H2 en H3), H1 niet omdat deze hidden is.
+  - De links/koppelingen worden gelezen.
+  - De volgorde van de elementen zijn verbeterd.
+  - De alts van de images/iconen worden nu gelezen en goed beschreven.
 
 </details>
-
-
 
 
 
@@ -194,6 +198,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Stand van zaken
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  - Het stylen met CSS vind ik nog steeds lastig.
+  - Het stylen van de gelen links/buttons was mij gelukt.
 
 
   ### Agenda voor meeting
@@ -215,8 +221,6 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   - ...
 
 </details>
-
-
 
 
 
@@ -242,9 +246,6 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 </details>
 
 
-
-
-
 ## Bronnenlijst
 
 <details open>
@@ -254,7 +255,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Nb. ChatGpT en andere AI horen er ook bij.
   Nb. Vermeld de bronnen ook in je code.
 
-  1. bron 1
+  1. Gebruiken van een link placeholder: https://stackoverflow.com/questions/4855168/what-is-href-and-why-is-it-used
   2. bron 2
   3. ...
 
