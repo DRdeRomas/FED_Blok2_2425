@@ -122,18 +122,21 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   | en dat ook nog | dit als er tijd is | nog een punt | Foto's/iconen responsief maken |
   | ...            | ...                | ...          | ...              |
 
-
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - De HTML van mijn eerste pagina moet ik nog een keer goed controleren <br>
+  Hetzelfde geldt voor mijn tweede pagina.
+  - Check a11y om content te verbergen en de algemene styling van CSS te verbeteren.
+  
+  Geleerd:
+  - aria-label gebruiken
+  - <abbr></abbr>
+  - <h1 lang="..."> gebruiken als er een woord is in het Engels en/of een andere taal.
+  - Downloaden van fonts op de juiste manier: Inspect > Netwerk > Fonts > Downloaden.
+  - Decoratieve foto's/iconen hoeven geen alt tekst, die mag je leeglaten.
 
 </details>
-
-
 
 
 
@@ -158,21 +161,18 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   | en dat ook nog | dit als er tijd is | nog een punt | Wanneer mag ik divs/classes gebruiken? |
   | ...            | ...                | ...          | ...              |
 
-
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-- ...
+  - Maak gebruik van responsive waardes als het gaat om bepaalde images/iconen, margins en paddings: denk aan em, rem of % in plaats van px.
+  - Divs/clasees gebruik je als het niet anders kan, vooral als het gaat om het positioneren van de elementen.
+
+  Geleerd: 
+  - Hoe ik een zoekbalk juist kan stijlen.
+  - Toepassen van een carousel
+  - Het gebruiken van max-width
 
 </details>
-
-
-
-
-
 ## Toegankelijkheidstest 2/2 (week 4)
 
 <details>
