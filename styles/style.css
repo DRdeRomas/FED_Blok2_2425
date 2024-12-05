@@ -2,16 +2,28 @@
 /* CSS REMEDY */
 /**************/
 
-*, *::after, *::before {
+/* *, *::after, *::before {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+} */
+
+* {
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
 }
 
-body {
-	font-family: 'Roboto', sans-serif;
-	/* font-family: 'Special Elite', sans-serif; */
-} 
+::before, ::after {
+	box-sizing: inherit;
+}
+
+/* iPhone SE afmetingen */
+html {
+	width: 100%;
+	max-width: 375px;
+	margin: 0 auto;
+}
 
 /*********************/
 /* CUSTOM PROPERTIES */
@@ -26,6 +38,7 @@ body {
 	--background-color2: #52ae32;
 	--background-color3: #9d9d9d;
 	
+	--search-bar-color: #efefef;
 	--banner-background-color: #FFEC00;
 
 	--borderradius-section: 0 20px 20px 20px;
@@ -53,29 +66,133 @@ body {
  	width: 1px;
 }
 
+body {
+	font-family: 'Roboto', sans-serif;
+} 
+
 /****************/
 /* JOUW STYLING */
 /****************/
-
-/* jouw code */
 /* HEADER */
-header{
-	display: flex;
-
+header {
+	padding: 1.25em 0.9375em 0em;
+	background-color: var(--background-color1);
 }
 
-header img {
-	max-width: 125px;
+header > img:first-of-type {
+	max-width: 7.8125em;
+}
+
+header form button {
+	width: 20px;
+	height: 20px; 
+	padding-right: 1em;
 }
 
 header form button img {
 	width: 20px;
-	height: 20px;
+	height: 28px;
 }
 
-header > img:last-of-type {
-	width: auto;
-	height: 50px;
+header a {
+	text-decoration: none;
+}
+
+header > a {
+	font-family: 'Special Elite', cursive;
+	font-size: 1.3em; 
+	font-weight: bold;
+	color: var(--text-color1);
+	background-color: var(--banner-background-color);
+	display: inline-block;
+	position: relative;
+	text-align: center;
+	padding: 0.3em 0.3em 0em;
+	line-height: 1em;
+}
+
+/* DONEER (GELE BANNER) */
+header > a::before, header > a::after {
+	/* background-image: url(/images/gele-banner-links.png); */
+	content: "";
+	position: absolute;
+	top: 0;
+	/* left: -0.2em; */
+	bottom: 0;
+}
+
+header > a::before {
+	background-image: url(/images/gele-banner-links.png);
+	left: -0.2em;
+	background-size: auto 100%;
+	width: 10px;
+}
+
+/* Ik krijg de andere kant niet juist */
+header > a::after {
+	background-image: url(/images/gele-banner-rechts.png);
+	right: -0.2em;
+	right: -8px;
+	background-position: right;
+	/* background-size: auto 100%; */
+	width: 10px;
+}
+
+/* header > a::before {
+	content: url(/images/gele-banner-links.png);
+	position: absolute;
+	left: -0.5em;
+	top: -0.01em;
+	background: left center no-repeat;
+	width: 10px;
+	height: 10
+	height: 10px;
+	z-index: -10;
+} *
+
+ header > a::after {
+	background-image: url(/images/gele-banner.png);
+} */
+
+.hulpnodig {
+	display: flex;
+	align-items: center;
+}
+
+.hulpnodig img {
+	max-width: 3em;
+}
+
+.hulpnodig p {
+	font-weight: bold;
+	padding: 0.5em;
+}
+
+.hamburger {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	width: 1.75em;
+	height: 1.5em;
+	background: none;
+
+	appearance: none;
+	border: none;
+	cursor: pointer;
+
+	font-size: 1em;
+
+	background-image: var(--text-color1);
+	display: grid;
+	place-items: center;
+}
+
+.hamburger:nth-of-type(1) span {
+	display: block;
+	width: 1em;
+	height: 0.1em;
+	background-color: #000000;
+	border-radius: 0.1em;
 }
 
 /* NAV */
@@ -87,16 +204,38 @@ nav li {
 	list-style: none;
 }
 
-nav a {
-	text-decoration: none;
-}
-
 nav img {
-	width: 9.6px;
-	margin-left: 4px;
+	width: 0.75em;
+	padding: 0.1em;
 }
 
+/* ZOEKBALK */
+form  {
+	display: inline-flex;
+	background-color: var(--search-bar-color);
+	align-items: stretch;
+	border-radius: 0.3em;
+	font-size: 16px;
+}
 
+button {
+	display: block;
+	flex-shrink: 0;
+	margin: 0.3em;
+	border: none;
+	outline: inherit;
+	/* aspect-ratio: 1/1; */
+	background-color: transparent;
+}
+
+input {
+	width: 14.8em;
+	padding: 0.75em;
+	border: none;
+	border-radius: 0.3em;
+	background-color: transparent;
+	outline: none;
+}
 
 /* SECTION */
 .background {
@@ -117,3 +256,43 @@ footer section:nth-child(2) ul li{
     list-style-type: none;
 }
 
+section li {
+	list-style: none;
+}
+
+/* SECTION 1 */
+section:nth-of-type(1) {
+	color: var(--text-color1);
+}
+
+/* SECTION MET CAROUSEL */
+section:nth-of-type(5) ul {
+	display: flex;
+	overflow-x: auto;
+	scroll-behavior: smooth;
+	gap: 1em;
+	padding: 0.9375em;
+
+	background-color: var(--background-color1)
+}
+
+section:nth-of-type(5) p {
+	content: "[...]";
+}
+
+/* section:nth-of-type(5) img {
+
+} */
+
+section:nth-of-type(5) img {
+	max-width: 21.5625em;
+}
+
+/* section h2 {
+	font-family: 'Roboto', sans-serif;
+	font-size: 24px;
+} */
+
+section:nth-of-type(2) {
+	background-color: var(--background-color3);
+}
