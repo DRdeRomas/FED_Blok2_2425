@@ -1,7 +1,4 @@
-/**************/
-/* CSS REMEDY */
-/**************/
-
+/* CSS voor HEADER, FOOTER en CUSTOM PROPERTIES */
 /* *, *::after, *::before {
 	padding: 0;
 	margin: 0;
@@ -25,28 +22,30 @@ html {
 	margin: 0 auto;
 }
 
-/*********************/
-/* CUSTOM PROPERTIES */
-/*********************/
 
+/* CUSTOM PROPERTIES */
 :root {
-	/* startje */
 	--text-color1:#000000;
 	--text-color2: #ffffff;
+	--text-color3: #3d3d3d;
 
 	--background-color1:#ffffff;
 	--background-color2: #52ae32;
-	--background-color3: #9d9d9d;
+	--background-color3: #f2f2f2;
 	
 	--search-bar-color: #efefef;
 	--banner-background-color: #FFEC00;
 
-	--borderradius-section: 0 20px 20px 20px;
+	--borderradius-section: 0em 1.25em 1.25em 1.25em;
+	--borderradius-button: 0.2em;
+	--border-color: #686e77;
+
+	--section-padding: 0.9375em 0.9375em 0em 0.9375em;
 }
 
 @font-face {
     font-family: 'Roboto';
-    src: url('../fonts/Roboto-Regular.ttf') format('truetype');
+    src: url('../fonts/RobotoRegular.ttf') format('truetype');
     font-weight: normal;
 }
 
@@ -56,6 +55,13 @@ html {
     font-weight: normal;
 }
 
+@font-face {
+	font-family: 'DINBlack';
+	src: url('../fonts/DINBlackRegular.otf') format('opentype');
+	font-weight: normal;
+}
+
+/* H1 van de actuele website is ook hidden */
 .visually_hidden {
 	clip: rect(0 0 0 0);
 	clip-path: inset(50%);
@@ -70,9 +76,7 @@ body {
 	font-family: 'Roboto', sans-serif;
 } 
 
-/****************/
 /* JOUW STYLING */
-/****************/
 /* HEADER */
 header {
 	padding: 1.25em 0.9375em 0em;
@@ -99,7 +103,9 @@ header a {
 }
 
 header > a {
-	font-family: 'Special Elite', cursive;
+	width: 5em;
+	height: 2em;
+	font-family: 'Special Elite', serif;
 	font-size: 1.3em; 
 	font-weight: bold;
 	color: var(--text-color1);
@@ -107,7 +113,7 @@ header > a {
 	display: inline-block;
 	position: relative;
 	text-align: center;
-	padding: 0.3em 0.3em 0em;
+	padding: 0.6em 0.3em;
 	line-height: 1em;
 }
 
@@ -128,7 +134,6 @@ header > a::before {
 	width: 10px;
 }
 
-/* Ik krijg de andere kant niet juist */
 header > a::after {
 	background-image: url(/images/gele-banner-rechts.png);
 	right: -0.2em;
@@ -138,20 +143,8 @@ header > a::after {
 	width: 10px;
 }
 
-/* header > a::before {
-	content: url(/images/gele-banner-links.png);
-	position: absolute;
-	left: -0.5em;
-	top: -0.01em;
-	background: left center no-repeat;
-	width: 10px;
-	height: 10
-	height: 10px;
-	z-index: -10;
-} *
-
  header > a::after {
-	background-image: url(/images/gele-banner.png);
+	background-image: url(/images/gele-banner-rechts.png);
 } */
 
 .hulpnodig {
@@ -247,52 +240,67 @@ input {
 }
 
 /* FOOTER */
-footer section:nth-child(2){
-	color: var(--text-color2);
-	background-color: var(--background-color2);
+footer {
+	color: var(--text-color1);
+	background-color: var(--background-color1);
+	padding: 30px 15px 0px;
+}
+
+footer h2 {
+	font-family: 'Roboto', sans-serif;
+	font-size: 18px;
+	margin-bottom: 1em;
+}
+
+footer section:nth-of-type(1) ul {
+    display: flex;  
+    align-items: center; 
+    gap: 1em; 
+	margin-bottom: 0.5em;
+}
+
+footer section:nth-of-type(1) ul li {
+    display: inline-block;  
+}
+
+footer section:nth-of-type(1) ul li a img {
+    display: block;  
+	width: 1.5em;   
 }
 
 footer section:nth-child(2) ul li{
     list-style-type: none;
 }
 
-section li {
-	list-style: none;
+footer > img {
+	width: 5em;
 }
 
-/* SECTION 1 */
-section:nth-of-type(1) {
-	color: var(--text-color1);
+footer section:nth-of-type(5) {
+	color: var(--text-color2);
+    background-color: var(--background-color2);
 }
 
-/* SECTION MET CAROUSEL */
-section:nth-of-type(5) ul {
+/* footer section ul:nth-of-type(4) {
 	display: flex;
-	overflow-x: auto;
-	scroll-behavior: smooth;
-	gap: 1em;
-	padding: 0.9375em;
-
-	background-color: var(--background-color1)
+	align-items: center;
 }
 
-section:nth-of-type(5) p {
-	content: "[...]";
-}
-
-/* section:nth-of-type(5) img {
-
+footer section:nth-of-type(2) ul li {
+    display: inline-block;  
 } */
 
-section:nth-of-type(5) img {
-	max-width: 21.5625em;
+
+footer section:nth-of-type(5) ul {
+    display: flex;
+    justify-content: center;
 }
 
-/* section h2 {
-	font-family: 'Roboto', sans-serif;
-	font-size: 24px;
-} */
+footer section:nth-of-type(5) ul li {
+    display: inline-block;
+	padding: 0;
+}
 
-section:nth-of-type(2) {
-	background-color: var(--background-color3);
+footer section:nth-of-type(5) ul li {
+    font-size: 15px;
 }

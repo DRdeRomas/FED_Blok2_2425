@@ -1,0 +1,158 @@
+/* CSS voor de HOME PAGINA van ASKV */
+h2 {
+    font-family: 'DINBlack', serif;
+}
+
+h3 {
+    font-family: 'Special Elite' cursive;
+}
+
+a {
+    text-decoration: none;
+}
+
+section li {
+	list-style: none;
+}
+
+/* SECTION 1 */
+main section:nth-of-type(1) {
+    font-weight: bold;
+    background-image: url(/images/foto1.jpeg);
+    height: 400px;
+    margin-top: 1em;
+    padding: var(--section-padding);
+}
+
+main section:nth-of-type(1) p {
+    color: var(--text-color2);
+    line-height: 1.5em;
+    margin-top: 3em;
+}
+
+main section:nth-of-type(1) p:nth-of-type(2) {
+    margin: 1.5em auto;
+}
+
+main section:nth-of-type(1) a {
+    font-family: 'DINBlack', serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--text-color1);
+    background-color: var(--background-color1);
+    border-radius: var(--borderradius-button);
+    padding: 0.75em;
+
+
+    /* SECTION 1 ANIMATIE */
+    display: inline-block;
+    position: relative;
+    width: 15ch;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    animation: 
+        typing 2s steps(15, end) infinite,
+        /* deleting 2s steps(15, end) infinite, */
+        cursor .4s step-end infinite alternate;
+}
+
+@keyframes cursor-blink {
+    50% {
+        border-color: black;
+    }
+}
+
+@keyframes typing {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 15ch;
+    }
+}
+
+@keyframes deleting {
+    0% {
+        width: 15ch;
+    }
+    100% {
+        width: 0;
+    }
+}
+
+
+
+/* SECTION 2  */
+
+main section:nth-of-type(2) {
+	background-color: var(--background-color3);
+    padding: var(--section-padding);
+    /* display: flex;
+    flex-wrap: wrap; */
+}
+
+main section:nth-of-type(2) ul {
+    background-color: var(--background-color1);
+    border: 1px solid;
+    border-radius: var(--borderradius-section);
+}
+
+main section:nth-of-type(2) h2 {
+    font-family: 'DINBlack', serif;
+    background-color: var(--background-color1);
+}
+
+main section:nth-of-type(2) h3 {
+    background-color: var(--banner-background-color);
+	height: 2em;
+	font-family: 'Special Elite', cursive;
+	font-size: 1.3em; 
+	font-weight: bold;
+	position: relative;
+	text-align: center;
+	padding: 0.6em 0.3em;
+	line-height: 1em;
+}
+
+main section:nth-of-type(2) a {
+    font-family: 'DINBlack', serif;
+    font-size: 12px;
+    color: var(--text-color3)
+}
+
+/* SECTION 3 */
+
+/* SECTION 4 */
+
+/* SECTION 5 (CAROUSEL) */
+main section:nth-of-type(5) ul {
+	display: flex;
+	overflow-x: auto;
+	scroll-behavior: smooth;
+	gap: 1em;
+	padding: 0.9375em;
+
+	background-color: var(--background-color3)
+}
+
+section:nth-of-type(5) p {
+	content: "[...]";
+}
+
+/* section:nth-of-type(5) img {
+
+} */
+
+section:nth-of-type(5) img {
+	max-width: 21.5625em;
+}
+
+/* SECTION 6 */
+main section:nth-of-type(6) {
+    color: var(--text-color2);
+    background-color: var(--background-color2);
+    border: white;
+    border-radius: var(--borderradius-section);
+    padding: 1.875em  0.9375em;
+}
