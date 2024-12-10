@@ -262,12 +262,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   5. Gebruiken van een fieldset: https://www.w3schools.com/TAGS/tag_legend.asp  
   6. Telefoonnummers: https://www.w3docs.com/snippets/html/how-to-add-telephone-links-with-html.html 
   7. Toegankelijkheid labels: https://www.w3schools.com/accessibility/accessibility_labels.php
-  8. Het gebruiken van ARIA:
-https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA 
-  9. ::before & ::after pseudoelementen: 
-https://youtu.be/zGiirUiWslI?si=XQy3Yh0tfmlm4tF6 
-
-
-
-
+  8. Het gebruiken van ARIA: https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA 
+  9. ::before & ::after pseudoelementen:  https://youtu.be/zGiirUiWslI?si=XQy3Yh0tfmlm4tF6 
+  10. Hoe maak ik een afbeelding donkerder:
+  - https://dev.to/nazanin_ashrafi/how-to-darken-an-image-with-css-4f5h
+  - https://www.w3schools.com/cssref/func_brightness.php 
+  11. Light-Dark mode: https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/light-dark 
+  
 </details>

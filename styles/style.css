@@ -1,10 +1,4 @@
 /* CSS voor HEADER, FOOTER en CUSTOM PROPERTIES */
-/* *, *::after, *::before {
-	padding: 0;
-	margin: 0;
-	box-sizing: border-box;
-} */
-
 * {
 	padding: 0;
 	margin: 0;
@@ -15,15 +9,41 @@
 	box-sizing: inherit;
 }
 
-/* iPhone SE afmetingen */
-html {
-	width: 100%;
-	max-width: 375px;
-	margin: 0 auto;
+h2 {
+    font-family: 'DINBlack', serif;
 }
 
+h3 {
+    font-family: 'Special Elite' cursive;
+}
+
+a {
+    text-decoration: none;
+}
+
+section li {
+	list-style: none;
+}
 
 /* CUSTOM PROPERTIES */
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/RobotoRegular.ttf') format('truetype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Special Elite';
+    src: url('../fonts/SpecialElite.ttf') format('truetype');
+    font-weight: normal;
+}
+
+@font-face {
+	font-family: 'DINBlack';
+	src: url('../fonts/DINBlackRegular.otf') format('opentype');
+	font-weight: normal;
+}
+
 :root {
 	--text-color1:#000000;
 	--text-color2: #ffffff;
@@ -43,24 +63,6 @@ html {
 	--section-padding: 0.9375em 0.9375em 0em 0.9375em;
 }
 
-@font-face {
-    font-family: 'Roboto';
-    src: url('../fonts/RobotoRegular.ttf') format('truetype');
-    font-weight: normal;
-}
-
-@font-face {
-    font-family: 'Special Elite';
-    src: url('../fonts/SpecialElite.ttf') format('truetype');
-    font-weight: normal;
-}
-
-@font-face {
-	font-family: 'DINBlack';
-	src: url('../fonts/DINBlackRegular.otf') format('opentype');
-	font-weight: normal;
-}
-
 /* H1 van de actuele website is ook hidden */
 .visually_hidden {
 	clip: rect(0 0 0 0);
@@ -74,9 +76,9 @@ html {
 
 body {
 	font-family: 'Roboto', sans-serif;
-} 
+	background-color: var(--background-color3);
+}
 
-/* JOUW STYLING */
 /* HEADER */
 header {
 	padding: 1.25em 0.9375em 0em;
@@ -87,23 +89,13 @@ header > img:first-of-type {
 	max-width: 7.8125em;
 }
 
-header form button {
-	width: 20px;
-	height: 20px; 
-	padding-right: 1em;
-}
-
-header form button img {
-	width: 20px;
-	height: 28px;
-}
-
 header a {
 	text-decoration: none;
 }
 
-header > a {
-	width: 5em;
+/* DONEER (GELE BANNER) */
+header > a:nth-of-type(2) {
+	width: max-content;
 	height: 2em;
 	font-family: 'Special Elite', serif;
 	font-size: 1.3em; 
@@ -117,48 +109,85 @@ header > a {
 	line-height: 1em;
 }
 
-/* DONEER (GELE BANNER) */
-header > a::before, header > a::after {
-	/* background-image: url(/images/gele-banner-links.png); */
+header > a::before, header > a:nth-of-type(2)::after {
 	content: "";
 	position: absolute;
 	top: 0;
-	/* left: -0.2em; */
 	bottom: 0;
 }
 
 header > a::before {
 	background-image: url(/images/gele-banner-links.png);
-	left: -0.2em;
+	background-position: left;
 	background-size: auto 100%;
+	left: -0.3em;
 	width: 10px;
 }
 
 header > a::after {
 	background-image: url(/images/gele-banner-rechts.png);
-	right: -0.2em;
-	right: -8px;
 	background-position: right;
-	/* background-size: auto 100%; */
+	background-size: auto 100%;
+	right: -0.4em;
 	width: 10px;
 }
 
- header > a::after {
-	background-image: url(/images/gele-banner-rechts.png);
-} */
-
-.hulpnodig {
-	display: flex;
-	align-items: center;
-}
-
-.hulpnodig img {
+header img:nth-last-of-type(1) {
 	max-width: 3em;
 }
 
-.hulpnodig p {
+header a > p {
 	font-weight: bold;
 	padding: 0.5em;
+}
+
+/* ZOEKBALK */
+header form {
+	background-color: var(--search-bar-color);
+	display: inline-flex;
+	align-items: center; 
+	height: 2.75em;
+	border-radius: 0.5em;
+	padding: 0.25em;
+}
+
+header input {
+	background-color: transparent;
+	width: 14.8em;
+	border: none;
+	border-radius: 0.3em;
+	outline: none;
+	padding: 0.75em;
+}
+
+header button {
+	background-color: transparent;
+	border: none;
+	outline: none;
+	height: 2.75em;
+	width: 2.75em;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+header button img {
+	width: 1.75em;
+	height: 1.75em;
+}
+
+/* NAV */
+nav {
+	display: flex;
+}
+
+nav li {
+	list-style: none;
+}
+
+nav img {
+	width: 0.75em;
+	padding: 0.1em;
 }
 
 .hamburger {
@@ -180,7 +209,7 @@ header > a::after {
 	place-items: center;
 }
 
-.hamburger:nth-of-type(1) span {
+.hamburger span{
 	display: block;
 	width: 1em;
 	height: 0.1em;
@@ -188,119 +217,132 @@ header > a::after {
 	border-radius: 0.1em;
 }
 
-/* NAV */
-nav {
-	display: flex;
-}
-
-nav li {
-	list-style: none;
-}
-
-nav img {
-	width: 0.75em;
-	padding: 0.1em;
-}
-
-/* ZOEKBALK */
-form  {
-	display: inline-flex;
-	background-color: var(--search-bar-color);
-	align-items: stretch;
-	border-radius: 0.3em;
-	font-size: 16px;
-}
-
-button {
-	display: block;
-	flex-shrink: 0;
-	margin: 0.3em;
-	border: none;
-	outline: inherit;
-	/* aspect-ratio: 1/1; */
-	background-color: transparent;
-}
-
-input {
-	width: 14.8em;
-	padding: 0.75em;
-	border: none;
-	border-radius: 0.3em;
-	background-color: transparent;
-	outline: none;
-}
-
-/* SECTION */
-.background {
-	background-image: url(../images/foto1.jpeg);
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
-	height: 100vh;
-}
-
 /* FOOTER */
 footer {
 	color: var(--text-color1);
 	background-color: var(--background-color1);
-	padding: 30px 15px 0px;
+	padding-top: 1.875em;
 }
 
 footer h2 {
 	font-family: 'Roboto', sans-serif;
 	font-size: 18px;
-	margin-bottom: 1em;
+	margin: 1.25em 0em 1.25em 0em;
 }
 
 footer section:nth-of-type(1) ul {
     display: flex;  
     align-items: center; 
     gap: 1em; 
-	margin-bottom: 0.5em;
+	padding: 0em 0.9375em;
 }
 
-footer section:nth-of-type(1) ul li {
-    display: inline-block;  
-}
+footer section:nth-of-type(1) ul li{
+    list-style-type:none;
+} 
 
 footer section:nth-of-type(1) ul li a img {
     display: block;  
 	width: 1.5em;   
 }
 
-footer section:nth-child(2) ul li{
-    list-style-type: none;
+footer section:nth-of-type(2) p:nth-of-type(3) {
+	color: var(--background-color2);
+	margin:0.9375em 0em;
 }
 
-footer > img {
-	width: 5em;
+footer section:nth-of-type(2) p:nth-of-type(5) {
+	margin:0.9375em 0em;
 }
 
-footer section:nth-of-type(5) {
-	color: var(--text-color2);
-    background-color: var(--background-color2);
+footer section:nth-of-type(2) a:first-of-type {
+	color: var(--text-color1);
 }
 
-/* footer section ul:nth-of-type(4) {
+footer section:nth-of-type(2) a:last-of-type {
+	color: var(--background-color2);
+	text-decoration: underline;
+} 
+ 
+footer section:nth-of-type(3) ul li a {
+	color: var(--background-color2);
+}
+
+footer section:nth-of-type(4) ul li a {
+	color: var(--background-color2);
+}
+
+footer section:nth-of-type(4) div {
 	display: flex;
+	justify-content: flex-start;
 	align-items: center;
+	gap: 5em;
 }
 
-footer section:nth-of-type(2) ul li {
-    display: inline-block;  
-} */
+footer section:nth-of-type(4) div img {
+	margin: 1em 0em 1em 0em;
+}
 
+footer section:nth-of-type(4) img:nth-of-type(1){
+	width: auto;
+	height: 2.5em;
+}
+
+footer section:nth-of-type(4) img:nth-of-type(2){
+	width: auto;
+	height: 5.75em;
+}
+
+footer section:last-of-type {
+	color: var(--text-color2);
+	background-color: var(--background-color2);
+	padding: 0.9375em;
+}
+
+footer section:not(:nth-last-of-type(5)) {
+	padding: 0em 0.9375em;
+}
 
 footer section:nth-of-type(5) ul {
     display: flex;
-    justify-content: center;
-}
+    justify-content: flex-end;
+}  
 
 footer section:nth-of-type(5) ul li {
     display: inline-block;
 	padding: 0;
+	font-size: 15px;
 }
 
-footer section:nth-of-type(5) ul li {
-    font-size: 15px;
+/* FOOTER ICONS/ELEMENTS ANIMATION */
+@keyframes zoom-animation1 {
+	0% {
+		scale: 1;
+	}
+	100% {
+		scale: 2;
+	}
+}
+
+@keyframes zoom-animation2 {
+	0% {
+		scale: 0.9;
+	}
+	100% {
+		scale: 1;
+	}
+}
+
+footer section:nth-of-type(1) ul li a img:hover {
+	animation-name: zoom-animation1;
+	animation-duration: .5s;
+	animation-timing-function: ease-in-out;
+	animation-fill-mode: forwards;
+}
+
+footer section:nth-of-type(2) p:nth-of-type(4):hover {
+	animation-name: zoom-animation2;
+	animation-duration: 1s;
+	animation-timing-function: ease-in-out;
+	animation-fill-mode: forwards;
 }
