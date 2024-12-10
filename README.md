@@ -200,6 +200,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
   - Het stylen met CSS vind ik nog steeds lastig.
   - Het stylen van de gelen links/buttons was mij gelukt.
+  - De elementen in de header juist zetten.
+  - Sommige sections in mijn website hebben twee achtergrond kleuren, 
+  maar het lukte me niet om hetzelfde te doen. Hoe kan ik dat het beste doen?
 
 
   ### Agenda voor meeting
@@ -215,10 +218,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - Je moet ze specifiek benoemen om ze juist te kunnen selecteren.
+  - De kleuren kunnen simpelweg worden aangepast met in de <html>. De andere kleuren worden dan apart vormgegeven.
+  - Na deze voortgang  heb ik mijn HTML opnieuw gecheckt en deze juist gecontroleerd.
+  - Voor de rest ging ik verder werken aan mijn CSS.
 
 </details>
 
@@ -268,5 +271,5 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   - https://dev.to/nazanin_ashrafi/how-to-darken-an-image-with-css-4f5h
   - https://www.w3schools.com/cssref/func_brightness.php 
   11. Light-Dark mode: https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/light-dark 
-  
+
 </details>
