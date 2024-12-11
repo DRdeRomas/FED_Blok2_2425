@@ -1,0 +1,349 @@
+/* CSS voor HEADER, FOOTER en CUSTOM PROPERTIES */
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+::before, ::after {
+	box-sizing: inherit;
+}
+
+h2 {
+    font-family: 'DINBlack', serif;
+}
+
+h3 {
+    font-family: 'Special Elite' cursive;
+}
+
+a {
+    text-decoration: none;
+}
+
+section li {
+	list-style: none;
+}
+
+/* CUSTOM PROPERTIES */
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/RobotoRegular.ttf') format('truetype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Special Elite';
+    src: url('../fonts/SpecialElite.ttf') format('truetype');
+    font-weight: normal;
+}
+
+@font-face {
+	font-family: 'DINBlack';
+	src: url('../fonts/DINBlackRegular.otf') format('opentype');
+	font-weight: normal;
+}
+
+:root {
+	color-scheme: light-dark;
+	--text-color1: light-dark(#000000, #ffffff);
+	--text-color2: light-dark(#ffffff, #000000);
+	--text-color3: #3d3d3d;
+
+	--background-color1:#ffffff;
+	--background-color2: #52ae32;
+	--background-color3: #f2f2f2;
+	
+	--search-bar-color: #efefef;
+	--banner-background-color: #FFEC00;
+
+	--borderradius-section: 0em 1.25em 1.25em 1.25em;
+	--borderradius-button: 0.2em;
+	--border-color: #686e77;
+
+	--section-padding: 0.9375em 0.9375em 0em 0.9375em;
+}
+
+/* H1 van de actuele website is ook hidden */
+.visually_hidden {
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+	white-space: nowrap;
+ 	width: 1px;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	background-color: var(--background-color3);
+}
+
+/* HEADER */
+header {
+	padding: 1.25em 0.9375em 0em;
+	background-color: var(--background-color1);
+}
+
+header > img:first-of-type {
+	max-width: 7.8125em;
+}
+
+header a {
+	text-decoration: none;
+}
+
+/* DONEER (GELE BANNER) */
+header > a:nth-of-type(2) {
+	width: max-content;
+	height: 2em;
+	font-family: 'Special Elite', serif;
+	font-size: 1.3em; 
+	font-weight: bold;
+	color: var(--text-color1);
+	background-color: var(--banner-background-color);
+	display: inline-block;
+	position: relative;
+	text-align: center;
+	padding: 0.6em 0.3em;
+	line-height: 1em;
+}
+
+header > a::before, header > a:nth-of-type(2)::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	bottom: 0;
+}
+
+header > a::before {
+	background-image: url("../images/gele-banner-links.png");
+	background-position: left;
+	background-size: auto 100%;
+	left: -0.3em;
+	width: 10px;
+}
+
+header > a::after {
+	background-image: url(/images/gele-banner-rechts.png);
+	background-position: right;
+	background-size: auto 100%;
+	right: -0.4em;
+	width: 10px;
+}
+
+header img:nth-last-of-type(1) {
+	max-width: 3em;
+}
+
+header a > p {
+	font-weight: bold;
+	padding: 0.5em;
+}
+
+/* ZOEKBALK */
+header form {
+	background-color: var(--search-bar-color);
+	display: inline-flex;
+	align-items: center; 
+	height: 2.75em;
+	border-radius: 0.5em;
+	padding: 0.25em;
+}
+
+header input {
+	background-color: transparent;
+	width: 14.8em;
+	border: none;
+	border-radius: 0.3em;
+	outline: none;
+	padding: 0.75em;
+}
+
+header button {
+	background-color: transparent;
+	border: none;
+	outline: none;
+	height: 2.75em;
+	width: 2.75em;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+header button img {
+	width: 1.75em;
+	height: 1.75em;
+}
+
+/* NAV */
+nav {
+	display: flex;
+}
+
+nav li {
+	list-style: none;
+}
+
+nav img {
+	width: 0.75em;
+	padding: 0.1em;
+}
+
+.hamburger {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	width: 1.75em;
+	height: 1.5em;
+	background: none;
+
+	appearance: none;
+	border: none;
+	cursor: pointer;
+
+	font-size: 1em;
+
+	background-image: var(--text-color1);
+	display: grid;
+	place-items: center;
+}
+
+.hamburger span{
+	display: block;
+	width: 1em;
+	height: 0.1em;
+	background-color: #000000;
+	border-radius: 0.1em;
+}
+
+/* FOOTER */
+footer {
+	color: var(--text-color1);
+	background-color: var(--background-color1);
+	padding-top: 1.875em;
+}
+
+footer h2 {
+	font-family: 'Roboto', sans-serif;
+	font-size: 18px;
+	margin: 1.25em 0em 1.25em 0em;
+}
+
+footer section:nth-of-type(1) ul {
+    display: flex;  
+    align-items: center; 
+    gap: 1em; 
+	padding: 0em 0.9375em;
+}
+
+footer section:nth-of-type(1) ul li{
+    list-style-type:none;
+} 
+
+footer section:nth-of-type(1) ul li a img {
+    display: block;  
+	width: 1.5em;   
+}
+
+footer section:nth-of-type(2) p:nth-of-type(3) {
+	color: var(--background-color2);
+	margin:0.9375em 0em;
+}
+
+footer section:nth-of-type(2) p:nth-of-type(5) {
+	margin:0.9375em 0em;
+}
+
+footer section:nth-of-type(2) a:first-of-type {
+	color: var(--text-color1);
+}
+
+footer section:nth-of-type(2) a:last-of-type {
+	color: var(--background-color2);
+	text-decoration: underline;
+} 
+ 
+footer section:nth-of-type(3) ul li a {
+	color: var(--background-color2);
+}
+
+footer section:nth-of-type(4) ul li a {
+	color: var(--background-color2);
+}
+
+footer section:nth-of-type(4) div {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	gap: 5em;
+}
+
+footer section:nth-of-type(4) div img {
+	margin: 1em 0em 1em 0em;
+}
+
+footer section:nth-of-type(4) img:nth-of-type(1){
+	width: auto;
+	height: 2.5em;
+}
+
+footer section:nth-of-type(4) img:nth-of-type(2){
+	width: auto;
+	height: 5.75em;
+}
+
+footer section:last-of-type {
+	color: var(--text-color2);
+	background-color: var(--background-color2);
+	padding: 0.9375em;
+}
+
+footer section:not(:nth-last-of-type(5)) {
+	padding: 0em 0.9375em;
+}
+
+footer section:nth-of-type(5) ul {
+    display: flex;
+    justify-content: flex-end;
+}  
+
+footer section:nth-of-type(5) ul li {
+    display: inline-block;
+	padding: 0;
+	font-size: 15px;
+}
+
+/* FOOTER ICONS/ELEMENTS ANIMATION */
+@keyframes zoom-animation1 {
+	0% {
+		scale: 1;
+	}
+	100% {
+		scale: 2;
+	}
+}
+
+@keyframes zoom-animation2 {
+	0% {
+		scale: 0.9;
+	}
+	100% {
+		scale: 1;
+	}
+}
+
+footer section:nth-of-type(1) ul li a img:hover {
+	animation-name: zoom-animation1;
+	animation-duration: .5s;
+	animation-timing-function: ease-in-out;
+	animation-fill-mode: forwards;
+}
+
+footer section:nth-of-type(2) p:nth-of-type(4):hover {
+	animation-name: zoom-animation2;
+	animation-duration: 1s;
+	animation-timing-function: ease-in-out;
+	animation-fill-mode: forwards;
+}
