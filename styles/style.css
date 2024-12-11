@@ -45,8 +45,9 @@ section li {
 }
 
 :root {
-	--text-color1:#000000;
-	--text-color2: #ffffff;
+	color-scheme: light-dark;
+	--text-color1: light-dark(#000000, #ffffff);
+	--text-color2: light-dark(#ffffff, #000000);
 	--text-color3: #3d3d3d;
 
 	--background-color1:#ffffff;
@@ -117,7 +118,7 @@ header > a::before, header > a:nth-of-type(2)::after {
 }
 
 header > a::before {
-	background-image: url(/images/gele-banner-links.png);
+	background-image: url("../images/gele-banner-links.png");
 	background-position: left;
 	background-size: auto 100%;
 	left: -0.3em;
