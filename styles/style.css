@@ -106,15 +106,14 @@ footer section {
 footer nav ul {
     display: flex;  
     align-items: center; 
-    gap: 1em; 
-	padding: 0 0.9375em;
+    gap: 1em;
 }
 
 footer nav ul li{
     list-style-type:none;
 } 
 
-footer nav) ul li a img {
+footer nav ul li a img {
     display: block;  
 	width: 1.5em;   
 }
