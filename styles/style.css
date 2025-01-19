@@ -58,7 +58,7 @@ abbr {
     --text-color4: light-dark(#585E6A, white);
 
 	--background-color1: light-dark(#ffffff, #000000);
-	--background-color2: #52ae32;
+	--background-color2: light-dark(#52ae32, #65dc3d);
 	--background-color3: light-dark(#f2f2f2, #272727);
 	
 	--search-bar-color: #efefef;
@@ -190,7 +190,7 @@ footer section:nth-of-type(4) ul li {
 		scale: 1;
 	}
 	100% {
-		scale: 2;
+		scale: 1.1;
 	}
 }
 
@@ -215,9 +215,10 @@ footer section:nth-of-type(1) {
 	justify-items: start;
 }
 
+footer section:nth-of-type(1) a:hover,
 footer section:nth-of-type(1) p:nth-of-type(4):hover {
 	animation-name: zoom-animation2;
-	animation-duration: 1s;
+	animation-duration: 0.3s;
 	animation-timing-function: ease-in-out;
 	animation-fill-mode: forwards;
 }
