@@ -1,0 +1,223 @@
+/* CSS voor HEADER, FOOTER en CUSTOM PROPERTIES */
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+::before, ::after {
+	box-sizing: inherit;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	background-color: var(--background-color3);
+}
+
+h2 {
+    font-family: 'DINBlack', serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+section li {
+	list-style: none;
+}
+
+abbr {
+    text-decoration: none;
+}
+
+/* CUSTOM PROPERTIES */
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/RobotoRegular.ttf') format('truetype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Special Elite';
+    src: url('../fonts/SpecialElite.ttf') format('truetype');
+    font-weight: normal;
+}
+
+@font-face {
+	font-family: 'DINBlack';
+	src: url('../fonts/DINBlackRegular.otf') format('opentype');
+	font-weight: normal;
+}
+
+:root {
+	color-scheme: light-dark;
+	--text-color1: light-dark(#000000, #ffffff);
+	--text-color2: light-dark(#ffffff, #000000);
+	--text-color3: light-dark(#3d3d3b);
+    --text-color4: light-dark(#585E6A, white);
+
+	--background-color1: light-dark(#ffffff, #000000);
+	--background-color2: light-dark(#52ae32, #65dc3d);
+	--background-color3: light-dark(#f2f2f2, #272727);
+	
+	--search-bar-color: #efefef;
+	--banner-background-color: #ffec00;
+
+	--borderradius-section: 0 1.25em 1.25em 1.25em;
+	--borderradius-button: 0.2em;
+	--border-color: #686e77;
+
+    --labelcolor-hover: #007306;
+    --labelcolor-checked: #112337;
+
+	--section-padding: 0.9375em 0.9375em 0 0.9375em;
+}
+
+/* H1 van de actuele website is ook hidden */
+.visually_hidden {
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+	white-space: nowrap;
+ 	width: 1px;
+}
+
+/* FOOTER */
+footer {
+	color: var(--text-color1);
+	background-color: var(--background-color1);
+	padding-top: 1.875em;
+}
+
+footer h2 {
+	font-family: 'Roboto', sans-serif;
+	font-size: 18px;
+	margin: 1.25em 0 1.25em 0;
+}
+
+footer nav,
+footer section {
+	padding: 0 0.9375em;
+}
+
+footer nav ul {
+    display: flex;  
+    align-items: center; 
+    gap: 1em;
+}
+
+footer nav ul li{
+    list-style-type:none;
+} 
+
+footer nav ul li a svg {
+    display: block;  
+	width: 1.5em;   
+	fill: var(--background-color2);
+}
+
+footer section:nth-of-type(1) p:nth-of-type(3) {
+	color: var(--background-color2);
+	margin:0.9375em 0;
+}
+
+footer section:nth-of-type(1) p:nth-of-type(5) {
+	margin:0.9375em 0;
+}
+
+footer section:nth-of-type(1) a:first-of-type {
+	color: var(--text-color1);
+}
+
+footer section:nth-of-type(1) a:last-of-type {
+	color: var(--background-color2);
+	text-decoration: underline;
+} 
+ 
+footer section:nth-of-type(2) ul li a {
+	color: var(--background-color2);
+}
+
+footer section:nth-of-type(3) ul li a {
+	color: var(--background-color2);
+}
+
+footer section:nth-of-type(3) ul:nth-of-type(2) {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	gap: 5em;
+}
+
+footer section:nth-of-type(3) ul:nth-of-type(2) img {
+	margin: 1em 0;
+}
+
+footer section:nth-of-type(3) ul:nth-of-type(2) li:nth-of-type(1) img {
+	width: auto;
+	height: 2.5em;
+}
+
+footer section:nth-of-type(3) ul:nth-of-type(2) li:nth-of-type(2) img {
+	width: auto;
+	height: 5.75em;
+}
+
+footer section:last-of-type {
+	color: var(--text-color2);
+	background-color: var(--background-color2);
+}
+
+footer section:nth-of-type(4) ul {
+    display: flex;
+    justify-content: flex-end;
+	flex-wrap: wrap;
+	/* padding: 0 0.9375em; */
+}  
+
+footer section:nth-of-type(4) ul li {
+    display: inline-block;
+	padding: 0;
+	font-size: 15px;
+}
+
+/* FOOTER ICONS/ELEMENTS ANIMATION */
+@keyframes zoom-animation1 {
+	0% {
+		scale: 1;
+	}
+	100% {
+		scale: 1.1;
+	}
+}
+
+@keyframes zoom-animation2 {
+	0% {
+		scale: 1;
+	}
+	100% {
+		scale: 1.1;
+	}
+}
+
+footer nav ul li a svg:hover {
+	animation-name: zoom-animation1;
+	animation-duration: .5s;
+	animation-timing-function: ease-in-out;
+	animation-fill-mode: forwards;
+}
+
+footer section:nth-of-type(1) {
+	display:grid;
+	justify-items: start;
+}
+
+footer section:nth-of-type(1) a:hover,
+footer section:nth-of-type(1) p:nth-of-type(4):hover {
+	animation-name: zoom-animation2;
+	animation-duration: 0.3s;
+	animation-timing-function: ease-in-out;
+	animation-fill-mode: forwards;
+}

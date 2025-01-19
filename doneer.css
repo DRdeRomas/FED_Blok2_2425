@@ -1,0 +1,239 @@
+/* CSS voor de DONEER PAGINA van ASKV */
+/* HEADER */
+header {
+    padding: 1.25em 0.9375em;
+    background-color: var(--background-color1);
+    background-color: var(--background-color3);
+}
+
+header a img {
+    max-width:  7.8125em;
+}
+
+/* SECTION 1 */
+main section {
+	background-color: var(--background-color1);
+    padding: 1.25em;
+    margin: 0 0.9375em 2em;
+    border-radius: var(--borderradius-section);
+}
+
+/* TOETSENBORD TOEGANKELIJKHEID */
+main section label:focus, 
+main section a:focus {
+    outline: 2px solid var(--background-color1);
+    outline-offset: 4px;
+}
+
+main section:nth-of-type(1) h2 {
+    font-family: 'DINBlack', serif;
+    font-size: 18px;
+}
+
+/* GELE BANNER */
+main section:nth-of-type(1) h3 {
+    background-color: var(--banner-background-color);
+	font-family: 'Special Elite', cursive;
+	font-size: 1.3em; 
+	font-weight: bold;
+    place-items: center;
+    width: fit-content;
+	margin: 1em 0 1em 0.625em;
+    padding: 0.6em 0.3em;
+    position: relative;
+}
+
+main section:nth-of-type(1) h3::before,
+main section:nth-of-type(1) h3::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    background-size: auto 100%;
+}
+
+main section:nth-of-type(1) h3::before {
+    background-image: url('../images/gele-banner-links.png');
+    background-position: left;
+    left: -0.3em;
+    width: 0.625em;
+}
+
+main section:nth-of-type(1) h3::after {
+    background-image: url('../images/gele-banner-rechts.png');
+    background-position: right;
+    right: -0.4em;
+    width: 0.625em;
+}
+
+main section:nth-of-type(1) fieldset {
+    border: none;
+    margin-bottom: 1.25em;
+}
+
+main section:nth-of-type(1) fieldset p {
+    color: var(--text-color4);
+    font-size: 15px;
+    margin: 1.5em 0em;
+
+}
+
+main section:nth-of-type(1) p:not(fieldset p) {
+    margin: 1.5em 0;
+    font-weight: bold;
+}
+
+main section:nth-of-type(1) legend {
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    display: block;
+}
+
+main section:nth-of-type(1) legend:after,
+main section:nth-of-type(1) fieldset:nth-of-type(2) p:last-of-type:after {
+	content: " *";
+    color: var(--labelcolor-hover);
+    font-weight: normal;
+}
+
+main section:nth-of-type(1) fieldset:nth-of-type(2) p:last-of-type {
+    font-weight: bold;
+}
+
+/* RADIO BUTTONS */
+main section:nth-of-type(1) input[type="radio"] {
+    display: none;
+}
+
+main section:nth-of-type(1) label,
+main section:nth-of-type(1) a {
+    font-size: 15px;
+    color: var(--text-color2);
+    background-color: var(--background-color2);
+    line-height: 2.875em;
+    padding: 0 0.9375em;
+    margin: 0.75em 0.75em 0.1875em 0;
+    width: auto;
+    border: 0.125em solid var(--background-color2);
+    border-radius: 0.1875em;
+    display: inline-flex;
+    flex-wrap: wrap;
+    cursor: pointer;
+    transition: background-color 0.1s, color 0.1s, border-color 0.11s;
+}
+
+main section:nth-of-type(1) label:has(:checked) {
+    color: var(--text-color2);
+    background-color: var(--labelcolor-checked);
+    border-color: var(--labelcolor-checked);
+}
+   
+main section:nth-of-type(1) fieldset:nth-of-type(2) label:last-of-type:has(:checked) {
+    color: white;
+    background-color: var(--labelcolor-checked);
+}
+
+main section:nth-of-type(1) fieldset:nth-of-type(2) label:last-of-type {
+    color: var(--text-color1);
+    background-color: var(--background-color1);
+}
+
+/* INPUT */
+main section:nth-of-type(1) input {
+    font-size: 15px;
+    color: var(--text-color1);
+	background-color: var(--search-bar-color);
+	display: inline-flex;
+	align-items: center; 
+	height: 2.75em;
+	border-radius: 0.1875em;
+    line-height: 2.875em;
+    padding: 0 0.9375em;
+    width: auto;
+    border: none;
+    outline: none;
+}
+
+/* IMAGES */
+main section:nth-of-type(1) ul {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5em;
+}
+
+main section:nth-of-type(1) ul li img{
+	margin: 1.5em 0;
+}
+
+main section:nth-of-type(1) ul li:nth-of-type(1) img {
+	width: auto;
+	height: 2.5em;
+}
+
+main section:nth-of-type(1) ul li:nth-of-type(2) img {
+	width: auto;
+	height: 5.75em;
+}
+
+main section:nth-of-type(1) > img:last-child {
+    width: 100%;
+    border-radius: var(--borderradius-section)
+}
+
+/* SECTION 2 */
+main section:nth-of-type(2) h2 {
+    color: var(--text-color1);
+    background-color: var(--background-color2);
+    border-radius: 0.125em;
+    text-align: center;
+    width: fit-content;
+    padding: 0.2em;
+    margin: 0 auto;
+}
+main section:nth-of-type(2) video {
+    border-radius: var(--borderradius-section);
+    width: 100%;
+    aspect-ratio: 16 /9;
+    margin: 1em 0;
+}
+
+/* SECTION 3 */
+main section:nth-of-type(3) details summary::after {
+    content: "+";
+    font-size: 1.5em;
+    font-weight: normal;
+}
+
+main section:nth-of-type(3) details[open] summary::after {
+    content: "-";
+}
+
+main section:nth-of-type(3) summary {
+    font-family: 'Roboto';
+    font-weight: bold;
+    font-size: 16px;
+    border-bottom: 1px solid var(--border-color);
+    padding: 0.75em 0;
+    margin-bottom: 0.5em;
+    list-style: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main section:nth-of-type(3) ul li {
+    list-style: disc;
+    margin: 1em;
+}
+
+main section:nth-of-type(3) p {
+    margin: 1em 0;
+}
+
+main section:nth-of-type(3) a {
+    color: var(--background-color2);
+    text-decoration: underline;
+}
