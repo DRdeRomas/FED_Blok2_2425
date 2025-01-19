@@ -274,14 +274,15 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   12. Carrousel: https://codepen.io/shooft/pen/abmLRMg 
   13. Custom Radio Buttons: https://youtu.be/mouR7XHcQ0k?si=dC6eYQ-dw_P8rKWw 
   14. ::checked: https://youtu.be/waxpaXYwn_s?si=9cC0mnQS7yyJ0TT4 
-  15. <details> <summary> - collapsible:
+  15. details & summary tags - collapsible:
   16. https://youtu.be/fSkhTd4rpDo?si=43btzjB1cnPoJHfv 
   17. Embed video: https://youtu.be/ly36kn0ug4k?si=ESLzXHEuFTOZU00i 
   18. Video: https://youtu.be/BAx2GaMW2qA?si=zwi70ydKLRGNVZKC 
   19. Bron van het gebruikte filmpje: 
   20. https://youtu.be/Ool30jokUVQ?si=oiL_3276iyVjINmG 
   21. Eerste poging met collapsible content: https://codepen.io/DRdeRomas/pen/XJrBKbe?editors=0100 
-  23. Navigatie hamburger menu: https://codepen.io/shooft/pen/JjQLVeB 
+  23. Navigatie hamburger menu: 
+  - https://codepen.io/shooft/pen/JjQLVeB 
   - https://codepen.io/shooft/pen/VwJXNEg?editors=1100 
   24. ChatGPT:
   - Collapsible: https://chatgpt.com/share/678a9940-6174-800c-89ac-5c2a5ee6be5b 
