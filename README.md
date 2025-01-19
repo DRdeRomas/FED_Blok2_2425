@@ -197,7 +197,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 3<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  Hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code):
   - Het stylen met CSS vind ik nog steeds lastig.
   - Het stylen van de gelen links/buttons was mij gelukt.
   - De elementen in de header juist zetten.
@@ -287,4 +287,5 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   24. ChatGPT:
   - Collapsible: https://chatgpt.com/share/678a9940-6174-800c-89ac-5c2a5ee6be5b 
   - Optie Anders: https://chatgpt.com/c/678ab0fd-d218-800c-ac1c-915f57b99edd
+  25. Focus state: https://css-tricks.com/almanac/pseudo-selectors/f/focus/ 
 </details>
