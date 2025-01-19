@@ -14,62 +14,87 @@
 
 <body>
 	<header>
-		<a href="index.html" aria-label="Home pagina">
-			<img src="images/logo.svg" alt="Foto van ASKV logo">
+		<a href="index.html" aria-label="Doneer pagina">
+			<img src="images/logo.svg" alt="SVG van ASKV logo" 
+			aria-label="Het Amsterdams Solidariteits Komitee 
+			Vluchtelingen, ASKV doneer pagina">
 		</a>
 	</header>
 
     <main>
-		<h1 class="visually_hidden">Doneer</h1>
+		<!-- SECTION 1 -->
+		<section>
+			<h1 class="visually_hidden">Doneer</h1>
+				<h2>Hoe kan jij helpen?</h2>
+					<h3>Steun ons met jouw donatie!</h3>
+	
+					<fieldset>
+						<legend>Ja, ik help mee!</legend>
+							<!-- Radio buttons om te kunnen kiezen -->
+							<label>
+								<input type="radio" name="donatie_type" value="eenmalig"> Eenmalig
+							</label>
+							<label>
+								<input type="radio" name="donatie_type" value="Maandelijks"> Maandelijks
+							</label>
+					</fieldset>
 
-        <section>
-			<h2>Hoe kan jij helpen?</h2>
-				<h3>Steun ons met jouw donatie!</h3>
+					<fieldset>
+						<legend>Hoeveel wil je doneren?</legend>
+						<label>
+							<input type="radio" name="donatie_bedrag" value="15"> €15
+						</label>
+						<label>
+							<input type="radio" name="donatie_bedrag" value="30"> €30
+						</label>
+						<label>
+							<input type="radio" name="donatie_bedrag" value="50"> €50
+						</label>
+						<label>
+							<input type="radio" name="donatie_bedrag" value="ander"> Anders
+						</label>
+						<p>Kies hoeveel je wilt doneren.</p>
+						<p>Ander bedrag</p>
+						<input type="number" name="donatie_bedrag_ander" id="aanpassing_bedrag">
+					</fieldset>
 
-			<fieldset>
-				<legend>Ja, ik help mee! *</legend>
-					<label>
-						<input type="radio" name="donatie_type" value="eenmalig"> Eenmalig
-					</label>
-					<label>
-						<input type="radio" name="donatie_type" value="Maandelijks"> Maandelijks
-					</label>
-			</fieldset>
+				<a href="#">Naar gegevens</a>
 
-			<fieldset>
-				<legend>Hoeveel wil je doneren? *</legend>
-					<label>
-						<input type="radio" name="donatie_bedrag" value="15"> 15 euros
-					</label>
-					<label>
-						<input type="radio" name="donatie_bedrag" value="30"> 30 euros
-					</label>
-					<label>
-						<input type="radio" name="donatie_bedrag" value="50"> 50 euros
-					</label>
-					<label>
-						<input type="radio" name="donatie_bedrag" value="ander">  Ander bedrag *
-					</label>
-					<input type="number" name="donatie_bedrag" id="aanpassing_bedrag" disabled>
-			</fieldset>
-
-			<p><a href="#">Naar gegevens</a></p>
-			</section>
-
-			<section>
 				<p>Ieder mens heeft recht op juridische bijstand en toegang tot onderwijs, 
 					gezondheidszorg en onderdak. Oók als je je land bent ontvlucht en (nog)
 					geen geldige verblijfsvergunning hebt. Want iedereen in Nederland verdient 
 					een menswaardig bestaan.</p>
-					<p>Kom jij ook in actie</p>
-					<img src="images/cbf.png" alt="Foto van CBF logo">
-					<img src="images/anbi.jpeg" alt="Foto van ANBI logo">
-					<img src="images/doneerfoto.jpeg" alt="Foto van een groep juichende mensen">
-			</section>
-        </section>
+				<p>Kom jij ook in actie?</p>
 
+				<ul>
+					<li><img src="images/anbi.jpeg" alt="Logo van ANBI"></img></li>
+					<li><img src="images/cbf.png" alt="Logo van CBF"></img></li>
+				</ul>
+				
+				<img src="images/doneerfoto.jpeg" alt="Foto van een groep juichende mensen">
+			</section>
+
+		<!-- SECTION 2 -->
+		 <section>
+			<h2>ASKV Donatie</h2>
+			<!-- Ik kon geen geschikte filmpjes vinden van de organisatie die ik kon downloaden, vandaar ik deze heb embed. Ik 
+			had ook een poging gemaakt met een filmpje van LinkedIn, maar deze was ingewikkelder. -->
+			<iframe src="https://www.youtube-nocookie.com/embed/Ool30jokUVQ?si=gpa6meB1E3xatRu_" 
+				title="YouTube video player" aria-label="ASKV Donatie filmpje" allow="accelerometer; autoplay; 
+				clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+				referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+			</iframe>
+			<p>Het <abbr title="Amsterdams Solidariteits Komitee Vluchtelingen">ASKV</abbr>/Steunpunt vluchtelingen helpt al 35 jaar 'uigeprocedeerde' vluchtelingen.
+				Zowel bij hun juridische procedure en eventuele huisvesting en medische hulp. 
+				Daarnaast voert zij campagne voor een humanitair vluchtelingenbeleid.
+			</p>
+		 </section>
+
+		<!-- SECTION 3 -->
 		<section>
-			<h2>Met jouw donatie</h2>
+			<!-- <details><summary> tags gebruikt, omdat deze de content verbergt, wat mijn echte gekozen website ook heeft -->
+			<details>
+				<summary>Met jouw donatie</summary>
 				<ul>
 					<li>Strijden we voor de structurele verbetering van de positie van mensen 
 						zonder verblijfsvergunning met lobby en campagne.
@@ -78,11 +103,15 @@
 						de dokter kunnen, een opleiding kunnen volgen en een thuis hebben.
 					</li>
 				</ul>
+			</details>
 
-			<h2>Liever periodiek schenken met belastingvoordeel?</h2>
-				<p>Voor wie het ASKV structureel wil steunen, bestaat er ook een periodieke 
-				   schenkingsovereenkomst. Deze ga je aan voor minimaal vijf jaar, waarbij je 
-				   een substantieel deel van je gift terugkrijgt van de belastingdienst.</p>
+				
+			<details>
+				<summary>Liever periodiek schenken met belastingvoordeel?</summary>
+				<p>Voor wie het <abbr title="Amsterdams Solidariteits Komitee Vluchtelingen">ASKV</abbr> 
+				   structureel wil steunen, bestaat er ook een periodieke schenkingsovereenkomst. 
+				   Deze ga je aan voor minimaal vijf jaar, waarbij je een substantieel deel van je 
+				   gift terugkrijgt van de belastingdienst.</p>
 				<p>Het enige wat je hoeft te doen is <a href="#">de overeenkomst downloaden</a>,
 				   invullen en in een envelop naar onderstaand adres sturen. Wij regelen 
 				   verder alles en je ontvangt uiteraard een bevestiging. 
@@ -107,11 +136,70 @@
 				<p>Lees hier onze 
 					<a href="#">privacyverklaring</a>.
 				</p>
+			</details>
 		</section>
     </main>
 
 	<footer>
+		<section>
+				<ul>
+					<li><a href="https://www.facebook.com/ASKV.Steunpunt.Vluchtelingen" aria-label="Bezoek onze Facebook pagina">
+						<img src="images/facebook.svg" alt="Icoontje van Facebook"></a>
+					</li>
+					<li><a href="https://x.com/askv_tweet/status/1673350178202431489" aria-label="Bezoek onze Twitter pagina">
+						<img src="images/twitter-square.svg" alt="Icoontje van Twitter"></a>
+					</li>
+					<li><a href="https://www.linkedin.com/company/askv-steunpuntvluchtelingen/" aria-label="Bezoek onze LinkedIn pagina">
+						<img src="images/linkedin.svg" alt="Icoontje van LinkedIn"></a>
+					</li>
+					<li><a href="https://www.instagram.com/askv_insta" aria-label="Bezoek onze Instagram pagina">
+						<img src="images/instagram.svg" alt="Icoontje van Instagram"></a>
+					</li>
+				</ul>
+		</section>
+
+		<section>
+			<h2>Neem contact op</h2>
+				<p>Chris Lebeaustraat 4</p>
+				<p>1062 DC Amsterdam</p>
+				<p>(ma t/m vrij 10-17 uur)</p>
+				<a href="tel:+31206272408">(+31) 020 6272408</a> 
+				<p>info@askv.nl</p>
+				<p>Het beste is om eerst te bellen.</p>
+				<a href="#">Alle contactgegevens</a>
+		</section>
+
+		<section>
+			<h2>Wat we doen</h2>
+				<ul>
+					<li><a href="#">Hulpverlening</a></li>
+					<li><a href="#">Projectbureau</a></li>
+					<li><a href="#">Medische opvang</a></li>
+					<li><a href="#">Lobby en campagne</a></li>
+				</ul>
+		</section>
+
+		<section>
+			<h2>Kom in actie</h2>
+				<ul>
+					<li><a href="#">Doneer</a></li>
+					<li><a href="#">Blijf op de hoogte</a></li>
+					<li><a href="#">Word vrijwilliger</a></li>
+				</ul>
+
+				<ul>
+					<li><img src="images/anbi.jpeg" alt="Logo van ANBI"></img></li>
+					<li><img src="images/cbf.png" alt="Logo van CBF"></img></li>
+				</ul>
+		</section>
 		
+		<section>
+			<ul>
+				<li>© ASKV | </li>
+				<li>Cookies | </li>
+				<li>Privacy en gegevensbescherming</li>
+			</ul>
+		</section>
 	</footer>
 
 	<script defer src="scripts/script.js"></script>

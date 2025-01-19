@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="nl">
-	
 <head>
 	<meta charset="UTF-8">
 	<meta name="author" content="Red de Romas">
@@ -15,7 +14,7 @@
 
 <body>
 	<header>
-		<img src="images/logo.svg" alt="SVG van ASKV logo">
+		<img src="images/logo.svg" alt="SVG van ASKV logo" aria-label="Het Amsterdams Solidariteits Komitee Vluchtelingen, ASKV home pagina">
 		<img src="images/hartlogo.webp" title="Hulp nodig/Need help?" alt="Foto van hartlogo"></img>
 		<a lang="en">Need help?</a>
 
@@ -27,11 +26,25 @@
 				<img src="images/zoeken.svg" alt="Foto van een vergrootglas"></img>
 			</button>
 		</form>
-		
+
+		<button aria-hidden="true">
+			<img src="images/hamburgermenu.svg" alt="">
+		</button>
+
+		<!-- SVG van hamburger menu -->
+			<!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+				<path d="M5 5v1.5h14V5H5zm0 7.8h14v-1.5H5v1.5zM5 19h14v-1.5H5V19z"></path>
+			</svg> -->
+
 		<nav>
+			<button aria-hidden="true">
+				<img src="images/kruisje.svg" alt="">
+			</button>
+
 			<ul>
 				<li>
-					<a href="#">Wat doen we<img src="images/pijltje-beneden.svg" alt=""></a>
+					<a href="#">Wat doen we</a>
+					<img src="images/pijltje-beneden.svg" alt="">
 				</li>
 				<li>
 					<a href="#">Kom in actie</a>
@@ -47,32 +60,21 @@
 				<li>
 					<a href="#">Contact</a>
 				</li>
-			</ul>
-
-			<button class="hamburger">
-				<span></span>
-				<span></span>
-				<span></span>
-			</button>
+			</ul>		
 		</nav>
 
 		<a href="doneer.html">Doneer!</a>
-
-		<!-- <div class="hulpnodig">
-			<img src="images/hartlogo.webp" title="Hulp nodig/Need help?" alt="Foto van hartlogo"></img>
-			<p lang="en">Need help?</p>
-		</div> -->
 	</header>
 
 	<main>
 		<!-- SECTION 1 -->
 		<section>
-			<h1 class="visually_hidden">Het <abbr title="Het Amsterdamse Solidariteits Komitee Vluchtelingen">ASKV</abbr></h1>
+			<h1 class="visually_hidden">Het <abbr title="Het Amsterdams Solidariteits Komitee Vluchtelingen">ASKV</abbr></h1>
 				<p>Het Amsterdams Solidariteits Komitee Vluchtelingen (ASKV) vindt dat ieder mens recht heeft op 
 				   juridische bijstand en toegang tot onderwijs, gezondheidszorg en onderdak. Oók als je nog geen 
 				   verblijfsvergunning hebt en niet kunt of durft terug te keren naar je land van herkomst.</p>
 				<p>Help je mee?</p>
-					<a href="#Ikzoekhulp">Ik zoek hulp</a> 
+					<a href="#">Ik zoek hulp</a> 
 		</section>
 
 		<!-- SECTION 2 -->
@@ -82,28 +84,28 @@
 				<li>
 					<h3>Hulpverlening</h3>
 					<p>Het ASKV biedt juridische en maatschappelijke begeleiding aan mensen zonder verblijfsvergunning.</p>
-					<a href="#Leesmeer" aria-label="Lees meer over hulpverlening">Lees meer
+					<a href="#" aria-label="Lees meer over hulpverlening">Lees meer
 						<img src="images/pijl-rechts2.svg" alt="">
 					</a>
 				</li>
 				<li>
 					<h3>Projectenbureau</h3>
 					<p>Het ASKV signaleert problemen en kansen uit de praktijk en pakt deze projectmatig aan.</p>
-					<a href="#Leesmeer" aria-label="Lees meer over projectenbureau">Lees meer
+					<a href="#" aria-label="Lees meer over projectenbureau">Lees meer
 						<img src="images/pijl-rechts2.svg" alt="">
 					</a>
 				</li>
 				<li>
 					<h3>Medische opvang</h3>
 					<p>Het ASKV biedt medische opvang en begeleiding aan mensen zonder verblijfsvergunning.</p>
-					<a href="#Leesmeer" aria-label="Lees meer over medische opvang">Lees meer
+					<a href="#" aria-label="Lees meer over medische opvang">Lees meer
 						<img src="images/pijl-rechts2.svg" alt="">
 					</a>
 				</li>
 				<li>
 					<h3>Lobby en campagne</h3>
 					<p>Het ASKV strijdt met lobby en campagne voor een menswaardig asiel- en migratiebeleid.</p>
-					<a href="#Leesmeer" aria-label="Lees meer over lobby en campagne">Lees meer
+					<a href="#" aria-label="Lees meer over lobby en campagne">Lees meer
 						<img src="images/pijl-rechts2.svg" alt="">
 					</a>
 				</li>
@@ -154,7 +156,7 @@
 					<p>Steun ons met jouw gift. Zo kunnen we mensen zonder verblijfsvergunning 
 					blijven ondersteunen en hun positie structureel verbeteren.
 					</p>
-					<a href="#Doneernu" aria-label="Lees meer over nu doneren">Doneer nu
+					<a href="#" aria-label="Lees meer over nu doneren">Doneer nu
 						<img src="images/pijl-rechts2.svg" alt="">
 					</a>
 				</li>
@@ -165,7 +167,7 @@
 					we mensen zonder verblijfsvergunning blijven ondersteunen en hun positie 
 					structureel verbeteren.
 					</p>
-					<a href="#Wordvrijwilliger" aria-label="Lees meer over vrijwilliger worden">Word vrijwilliger
+					<a href="#" aria-label="Lees meer over vrijwilliger worden">Word vrijwilliger
 						<img src="images/pijl-rechts2.svg" alt="">
 					</a>
 				</li>
@@ -175,15 +177,14 @@
 					<p>Schrijf je in voor onze nieuwsbrief. Zo blijf je op de hoogte van onze 
 					hulpverlening en acties.
 					</p>
-					<a href="#Blijfopdehoogte" aria-label="Lees meer over op de hoogte blijven">Blijf op de hoogte
+					<a href="#" aria-label="Lees meer over op de hoogte blijven">Blijf op de hoogte
 						<img src="images/pijl-rechts2.svg" alt="">
 					</a>
 				</li>
 			</ul>
-
 		</section>
 
-		<!-- SECTION 5 (CAROUSEL) -->
+		<!-- SECTION 5 (CARROUSEL) -->
 		<section>
 			<h2>Het laatste nieuws</h2>
 			<ul>
@@ -192,12 +193,13 @@
 						<img src="images/askv.jpeg" alt="Foto van de ASKV logo">
 					<time datetime="2024-11-5">5 november 2024</time>
 						<p>Vandaag, 5 november 2024, heeft de Tweede Kamer een motie aangenomen over 
-						kliniek Veldzicht. Deze motie roept de regering op om eerst met oplossingen 
-						te komen zodat ongedocumenteerden en COA-bewoners met psychische problemen 
-						niet op straat belanden. ASKV is blij met de aanname van deze motie en 
-						spreekt van een eerste stap in de goede
+							kliniek Veldzicht. Deze motie roept de regering op om eerst met oplossingen 
+							te komen zodat ongedocumenteerden en COA-bewoners met psychische problemen 
+							niet op straat belanden. ASKV is blij met de aanname van deze motie en 
+							spreekt van een eerste stap in de goede
 						</p>
-					<a href="#Leesmeer">Lees meer
+						<p>ASKV</p>
+					<a href="#">Lees meer
 						<img src="images/pijl-rechts2.svg" alt="">
 					</a>
 				</li>
@@ -212,7 +214,8 @@
 							het proces om de verblijfsvergunning aan te vragen. De voormalige staatssecretaris 
 							van Justitie en Veiligheid heeft begin dit jaar
 						</p>
-					<a href="#Leesmeer">Lees meer
+						<p>Verblijfsvergunning</p>
+					<a href="#">Lees meer
 						<img src="images/pijl-rechts2.svg" alt="">
 					</a>
 				</li>
@@ -225,7 +228,8 @@
 							hbo-student die stage komt lopen voor minimaal 3 dagen en maximaal 4 dagen 
 							per week. De stage start begin februari
 						</p>
-					<a href="#Leesmeer">Lees meer
+						<p>Vacature stage</p>
+					<a href="#">Lees meer
 						<img src="images/pijl-rechts2.svg" alt="">
 					</a>
 				</li>
@@ -238,12 +242,13 @@
 							een derde- of vierdejaars hbo-student die stage komt lopen voor minimaal drie en 
 							maximaal vier dagen per week. De stage start begin februari
 						</p>
-					<a href="#Leesmeer">Lees meer
+					<p>Vacature stage</p>
+					<a href="#">Lees meer
 						<img src="images/pijl-rechts2.svg" alt="">
 					</a>
 				</li>
 			</ul>
-			<a href="#Meer nieuwsberichten">Meer nieuwsberichten</a>
+			<a href="#">Meer nieuws&shy;berichten</a>
 		</section>
 
 		<!-- SECTION 6 -->
@@ -251,14 +256,13 @@
 			<h2>Blijf op de hoogte</h2>
 				<p>Schrijf je in voor onze nieuwsbrief. Zo blijf je op de hoogte van 
 					onze hulpverlening en acties.</p>
-
+					
 			<form>
 				<label for="email">
 					<input type="email" id="email" name="email" placeholder="Emailadres" required>
 				</label>
 				<button>Aanmelden</button>
 			</form>
-			<!-- <button>Aanmelden</button> -->
 		</section>
 	</main>
 
@@ -288,31 +292,31 @@
 				<a href="tel:+31206272408">(+31) 020 6272408</a> 
 				<p>info@askv.nl</p>
 				<p>Het beste is om eerst te bellen.</p>
-				<a href="#Allecontactgegevens">Alle contactgegevens</a>
+				<a href="#">Alle contactgegevens</a>
 		</section>
 
 		<section>
 			<h2>Wat we doen</h2>
 				<ul>
-					<li><a href="#Hulpverlening">Hulpverlening</a></li>
-					<li><a href="#Projectbureau">Projectbureau</a></li>
-					<li><a href="#Medischeopvang">Medische opvang</a></li>
-					<li><a href="#Lobbyencampagne">Lobby en campagne</a></li>
+					<li><a href="#">Hulpverlening</a></li>
+					<li><a href="#">Projectbureau</a></li>
+					<li><a href="#">Medische opvang</a></li>
+					<li><a href="#">Lobby en campagne</a></li>
 				</ul>
 		</section>
 
 		<section>
 			<h2>Kom in actie</h2>
 				<ul>
-					<li><a href="#Doneer">Doneer</a></li>
-					<li><a href="#Blijfopdehoogte">Blijf op de hoogte</a></li>
-					<li><a href="#Wordvrijwilliger">Word vrijwilliger</a></li>
+					<li><a href="#">Doneer</a></li>
+					<li><a href="#">Blijf op de hoogte</a></li>
+					<li><a href="#">Word vrijwilliger</a></li>
 				</ul>
 
-				<div>
-					<img src="images/anbi.jpeg"></img>
-					<img src="images/cbf.png"></img>
-				</div>
+				<ul>
+					<li><img src="images/anbi.jpeg" alt="Logo van ANBI"></img></li>
+					<li><img src="images/cbf.png" alt="Logo van CBF"></img></li>
+				</ul>
 		</section>
 		
 		<section>

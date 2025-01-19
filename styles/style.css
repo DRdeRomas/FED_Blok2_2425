@@ -3,18 +3,20 @@
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
+	/* border:solid 1px red; */
 }
 
 ::before, ::after {
 	box-sizing: inherit;
 }
 
-h2 {
-    font-family: 'DINBlack', serif;
+body {
+	font-family: 'Roboto', sans-serif;
+	background-color: var(--background-color3);
 }
 
-h3 {
-    font-family: 'Special Elite' cursive;
+h2 {
+    font-family: 'DINBlack', serif;
 }
 
 a {
@@ -23,6 +25,10 @@ a {
 
 section li {
 	list-style: none;
+}
+
+abbr {
+    text-decoration: none;
 }
 
 /* CUSTOM PROPERTIES */
@@ -48,20 +54,24 @@ section li {
 	color-scheme: light-dark;
 	--text-color1: light-dark(#000000, #ffffff);
 	--text-color2: light-dark(#ffffff, #000000);
-	--text-color3: #3d3d3d;
+	--text-color3: light-dark(#3d3d3b);
+    --text-color4: light-dark(#585E6A, white);
 
-	--background-color1:#ffffff;
+	--background-color1: light-dark(#ffffff, #000000);
 	--background-color2: #52ae32;
-	--background-color3: #f2f2f2;
+	--background-color3: light-dark(#f2f2f2, #272727);
 	
 	--search-bar-color: #efefef;
-	--banner-background-color: #FFEC00;
+	--banner-background-color: #ffec00;
 
-	--borderradius-section: 0em 1.25em 1.25em 1.25em;
+	--borderradius-section: 0 1.25em 1.25em 1.25em;
 	--borderradius-button: 0.2em;
 	--border-color: #686e77;
 
-	--section-padding: 0.9375em 0.9375em 0em 0.9375em;
+    --labelcolor-hover: #007306;
+    --labelcolor-checked: #112337;
+
+	--section-padding: 0.9375em 0.9375em 0 0.9375em;
 }
 
 /* H1 van de actuele website is ook hidden */
@@ -75,149 +85,6 @@ section li {
  	width: 1px;
 }
 
-body {
-	font-family: 'Roboto', sans-serif;
-	background-color: var(--background-color3);
-}
-
-/* HEADER */
-header {
-	padding: 1.25em 0.9375em 0em;
-	background-color: var(--background-color1);
-}
-
-header > img:first-of-type {
-	max-width: 7.8125em;
-}
-
-header a {
-	text-decoration: none;
-}
-
-/* DONEER (GELE BANNER) */
-header > a:nth-of-type(2) {
-	width: max-content;
-	height: 2em;
-	font-family: 'Special Elite', serif;
-	font-size: 1.3em; 
-	font-weight: bold;
-	color: var(--text-color1);
-	background-color: var(--banner-background-color);
-	display: inline-block;
-	position: relative;
-	text-align: center;
-	padding: 0.6em 0.3em;
-	line-height: 1em;
-}
-
-header > a::before, header > a:nth-of-type(2)::after {
-	content: "";
-	position: absolute;
-	top: 0;
-	bottom: 0;
-}
-
-header > a::before {
-	background-image: url("../images/gele-banner-links.png");
-	background-position: left;
-	background-size: auto 100%;
-	left: -0.3em;
-	width: 10px;
-}
-
-header > a::after {
-	background-image: url(/images/gele-banner-rechts.png);
-	background-position: right;
-	background-size: auto 100%;
-	right: -0.4em;
-	width: 10px;
-}
-
-header img:nth-last-of-type(1) {
-	max-width: 3em;
-}
-
-header a > p {
-	font-weight: bold;
-	padding: 0.5em;
-}
-
-/* ZOEKBALK */
-header form {
-	background-color: var(--search-bar-color);
-	display: inline-flex;
-	align-items: center; 
-	height: 2.75em;
-	border-radius: 0.5em;
-	padding: 0.25em;
-}
-
-header input {
-	background-color: transparent;
-	width: 14.8em;
-	border: none;
-	border-radius: 0.3em;
-	outline: none;
-	padding: 0.75em;
-}
-
-header button {
-	background-color: transparent;
-	border: none;
-	outline: none;
-	height: 2.75em;
-	width: 2.75em;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
-header button img {
-	width: 1.75em;
-	height: 1.75em;
-}
-
-/* NAV */
-nav {
-	display: flex;
-}
-
-nav li {
-	list-style: none;
-}
-
-nav img {
-	width: 0.75em;
-	padding: 0.1em;
-}
-
-.hamburger {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
-	width: 1.75em;
-	height: 1.5em;
-	background: none;
-
-	appearance: none;
-	border: none;
-	cursor: pointer;
-
-	font-size: 1em;
-
-	background-image: var(--text-color1);
-	display: grid;
-	place-items: center;
-}
-
-.hamburger span{
-	display: block;
-	width: 1em;
-	height: 0.1em;
-	background-color: #000000;
-	border-radius: 0.1em;
-}
-
 /* FOOTER */
 footer {
 	color: var(--text-color1);
@@ -228,14 +95,14 @@ footer {
 footer h2 {
 	font-family: 'Roboto', sans-serif;
 	font-size: 18px;
-	margin: 1.25em 0em 1.25em 0em;
+	margin: 1.25em 0 1.25em 0;
 }
 
 footer section:nth-of-type(1) ul {
     display: flex;  
     align-items: center; 
     gap: 1em; 
-	padding: 0em 0.9375em;
+	padding: 0 0.9375em;
 }
 
 footer section:nth-of-type(1) ul li{
@@ -249,11 +116,11 @@ footer section:nth-of-type(1) ul li a img {
 
 footer section:nth-of-type(2) p:nth-of-type(3) {
 	color: var(--background-color2);
-	margin:0.9375em 0em;
+	margin:0.9375em 0;
 }
 
 footer section:nth-of-type(2) p:nth-of-type(5) {
-	margin:0.9375em 0em;
+	margin:0.9375em 0;
 }
 
 footer section:nth-of-type(2) a:first-of-type {
@@ -273,23 +140,23 @@ footer section:nth-of-type(4) ul li a {
 	color: var(--background-color2);
 }
 
-footer section:nth-of-type(4) div {
+footer section:nth-of-type(4) ul:nth-of-type(2) {
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
 	gap: 5em;
 }
 
-footer section:nth-of-type(4) div img {
-	margin: 1em 0em 1em 0em;
+footer section:nth-of-type(4) ul:nth-of-type(2) img {
+	margin: 1em 0;
 }
 
-footer section:nth-of-type(4) img:nth-of-type(1){
+footer section:nth-of-type(4) ul:nth-of-type(2) li:nth-of-type(1) img {
 	width: auto;
 	height: 2.5em;
 }
 
-footer section:nth-of-type(4) img:nth-of-type(2){
+footer section:nth-of-type(4) ul:nth-of-type(2) li:nth-of-type(2) img {
 	width: auto;
 	height: 5.75em;
 }
@@ -301,12 +168,13 @@ footer section:last-of-type {
 }
 
 footer section:not(:nth-last-of-type(5)) {
-	padding: 0em 0.9375em;
+	padding: 0 0.9375em;
 }
 
 footer section:nth-of-type(5) ul {
     display: flex;
     justify-content: flex-end;
+	flex-wrap: wrap;
 }  
 
 footer section:nth-of-type(5) ul li {
@@ -327,10 +195,10 @@ footer section:nth-of-type(5) ul li {
 
 @keyframes zoom-animation2 {
 	0% {
-		scale: 0.9;
+		scale: 1;
 	}
 	100% {
-		scale: 1;
+		scale: 1.1;
 	}
 }
 
@@ -339,6 +207,11 @@ footer section:nth-of-type(1) ul li a img:hover {
 	animation-duration: .5s;
 	animation-timing-function: ease-in-out;
 	animation-fill-mode: forwards;
+}
+
+footer section:nth-of-type(2) {
+	display:grid;
+	justify-items: start;
 }
 
 footer section:nth-of-type(2) p:nth-of-type(4):hover {

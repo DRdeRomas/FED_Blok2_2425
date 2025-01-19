@@ -1,18 +1,163 @@
 /* CSS voor de HOME PAGINA van ASKV */
-h2 {
-    font-family: 'DINBlack', serif;
+/* HEADER */
+header {
+	padding: 1.25em 0.9375em;
+	background-color: var(--background-color1);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    width: 100%;
+    gap: 0.5em;
+    z-index: 9;
 }
 
-h3 {
-    font-family: 'Special Elite' cursive;
+header a:first-of-type {
+    color: var(--text-color1);
+    font-weight: bold;
 }
 
-a {
-    text-decoration: none;
+header > button {
+    order: 1;
 }
 
-section li {
+/* ZOEKBALK */
+header form {
+	background-color: var(--search-bar-color);
+	display: inline-flex;
+    justify-content: space-between;
+	align-items: center; 
+	border-radius: 0.5em;
+	padding: 0.25em;
+    width: 50%;
+    height: 2.75em;
+    max-width: 30em;
+    order: 2;
+}
+
+header input {
+	background-color: transparent;
+	width: 100%;
+	border: none;
+	border-radius: 0.3em;
+	outline: none;
+	padding: 0.75em;
+}
+
+header button {
+	background-color: transparent;
+	border: none;
+	outline: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    cursor: pointer;
+}
+
+header form button {
+	height: 1.75em;
+	width: 1.75em;
+}
+
+/* NAV HAMBURGER */
+nav {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    translate: 0% -150%;
+    transition: translate .3s ease;
+    z-index: 10;
+    background-color: var(--background-color1);
+}
+
+nav.toonMenu {
+    translate: 0% 0%;
+}
+
+nav ul {
+    border: 2px solid red;
+    display: flex;
+    flex-direction: column;
+    padding: 2em 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+nav li {
 	list-style: none;
+    margin: 2.25em 2em 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 80vw;
+}
+
+nav li img {
+	width: 0.75em;
+	padding: 0.1em;
+}
+
+nav button {
+    margin: 1em;
+    position: absolute;
+    top: 1.25em;
+    right: 1em;
+}
+
+header > img:first-of-type {
+	max-width: 7.8125em;
+}
+
+header img:nth-of-type(2) {
+    max-width: 3em;
+}
+
+header a > p {
+	font-weight: bold;
+	padding: 0.5em;
+}
+
+/* DONEER (GELE BANNER) */
+header > a:nth-of-type(2) {
+	width: fit-content;
+	font-family: 'Special Elite', serif;
+	font-size: 1.3em; 
+	font-weight: bold;
+	color: var(--text-color1);
+	background-color: var(--banner-background-color);
+	display: inline-block;
+	position: relative;
+	text-align: center;
+	padding: 0.6em 0.3em;
+	line-height: 1em;
+    order: 3;
+}
+
+header > a::before, header > a:last-of-type:after {
+	content: "";
+	position: absolute;
+	top: 0;
+	bottom: 0;
+}
+
+header > a:last-of-type:before {
+	background-image: url("../images/gele-banner-links.png");
+	background-position: left;
+	background-size: auto 100%;
+	left: -0.3em;
+	width: 0.625em;
+}
+
+header > a:last-of-type:after {
+	background-image: url(/images/gele-banner-rechts.png);
+	background-position: right;
+	background-size: auto 100%;
+	right: -0.4em;
+	width: 0.625em;
 }
 
 /* SECTION 1 */
@@ -22,6 +167,7 @@ main section:nth-of-type(1) {
     height: 25em;
     padding: var(--section-padding);
     overflow: hidden;
+    z-index: -1;
 }
 
 /* ::before zorgt ervoor dat ik de backround-image apart kan stylen */
@@ -59,7 +205,7 @@ main section:nth-of-type(1) a {
     border-radius: var(--borderradius-button);
     padding: 0.75em;
 
-    /* SECTION 1 ANIMATIE */
+    /* SECTION 1 ANIMATIE: Met behulp van een tutorial gemaakt */
     display: inline-block;
     position: relative;
     width: 15ch;
@@ -81,15 +227,11 @@ main section:nth-of-type(1) a {
 
 /* SECTION 2  */
 main section:nth-of-type(2) {
+    color: var(--text-color1);
 	background-color: var(--background-color1);
     padding: 1.25em;
-    margin: 2em 0.9375em 0em;
+    margin: 2em 0.9375em 0;
     border-radius: var(--borderradius-section);
-}
-
-main section:nth-of-type(2) section {
-    background-color: var(--text-color);
-    color: var(--text-color1);
 }
 
 main section:nth-of-type(2) ul li {
@@ -103,20 +245,17 @@ main section:nth-of-type(2) ul li img {
 
 main section:nth-of-type(2) h2 {
     font-family: 'DINBlack', serif;
-    background-color: var(--background-color1);
 }
 
 main section:nth-of-type(2) h3 {
+    color:  var(--text-color1);
     background-color: var(--banner-background-color);
 	font-family: 'Special Elite', cursive;
 	font-size: 1.3em; 
 	font-weight: bold;
-
-    display: grid;
     place-items: center;
-    width: max-content;
-    height: 1.75em;
-	margin: 0.5em 0em;
+    width: fit-content;
+	margin: 0.5em 0;
     padding: 0.6em 0.3em;
     position: relative;
 }
@@ -134,7 +273,7 @@ main section:nth-of-type(2) h3::before {
     background-position: left;
     background-size: auto 100%;
     left: -0.3em;
-    width: 10px;
+    width: 0.625em;
 }
 
 main section:nth-of-type(2) h3::after {
@@ -142,18 +281,18 @@ main section:nth-of-type(2) h3::after {
     background-position: right;
     background-size: auto 100%; 
     right: -0.4em; 
-    width: 10px;
+	width: 0.625em;
 }
 
 main section:nth-of-type(2) p {
-    margin: 1.5em 0em;
+    margin: 1.5em 0;
 }
 
 main section:nth-of-type(2) a {
     font-family: 'DINBlack', serif;
     font-size: 12px;
     color: var(--text-color3);
-    margin: 2em 0em;  
+    margin: 2em 0;  
 }
 
 @keyframes zoom-animation1 {
@@ -173,21 +312,17 @@ main section:nth-of-type(2) ul li a img:hover{
 
 /* SECTION 3 */
 main section:nth-of-type(3) {
+    color: var(--text-color1);
 	background-color: var(--background-color1);
     padding: 1.25em;
     margin: 2em 0.9375em;
     border-radius: var(--borderradius-section);
 }
 
-main section:nth-of-type(3) section {
-    background-color: var(--text-color);
-    color: var(--text-color1);
-}
-
 main section:nth-of-type(3) ul {
     display: grid;
     gap: 1.5em;
-    margin: 1em 0em;
+    margin: 1em 0;
 }
 
 main section:nth-of-type(3) ul li {
@@ -201,7 +336,7 @@ main section:nth-of-type(3) ul li img {
 }
 
 main section:nth-of-type(3) > img:first-of-type {
-    max-width: 19em;
+    width: 100%;
     margin-top: 1em;
     border-radius: var(--borderradius-section);
 }
@@ -216,17 +351,17 @@ main section:nth-of-type(4) h2 {
     color: var(--text-color2);
 }
 
-main section:nth-of-type(4) ul {
-    color: var(--text-color1);
-}
-
 main section:nth-of-type(4) ul li {
     color: var(--text-color1);
-    margin: 2em 0em 1.5625em;
+    margin: 2em 0 1.5625em;
     padding: 1.875em;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+main section:nth-of-type(4) p {
+    align-self: flex-start;
 }
 
 main section:nth-of-type(4) ul li:nth-child(-n+3){
@@ -244,13 +379,10 @@ main section:nth-of-type(4) ul li h3 {
 	font-family: 'Special Elite', cursive;
 	font-size: 1.3em; 
 	font-weight: bold;
-    display: grid;
-    place-items: center;
     position: relative;
     order: 0;
-    width: max-content;
-    height: 1.75em;
-	margin: 1em 0em 1em 0.625em;
+    width: fit-content;
+	margin: 1em 0 1em 0.625em;
     padding: 0.6em 0.3em;
     align-self: flex-start;
 }
@@ -268,7 +400,7 @@ main section:nth-of-type(4) ul li h3::before {
     background-position: left;
     background-size: auto 100%;
     left: -0.3em;
-    width: 10px;
+	width: 0.625em;
 }
 
 main section:nth-of-type(4) ul li h3::after {
@@ -276,14 +408,14 @@ main section:nth-of-type(4) ul li h3::after {
     background-position: right;
     background-size: auto 100%; 
     right: -0.4em; 
-    width: 10px;
+	width: 0.625em;
 }
 
 main section:nth-of-type(4) ul li a {
     font-family: 'DINBlack', serif;
     font-size: 12px;
     color: var(--text-color3);
-    margin: 1em 0em 0em;  
+    margin: 1em 0 0;  
     align-self: flex-start;
 }
 
@@ -292,13 +424,14 @@ main section:nth-of-type(4) ul li a img {
     margin-left: 1em;
 }
 
-/* SECTION 5 (CAROUSEL) */
+/* SECTION 5 (CARROUSEL) */
 main section:nth-of-type(5) h2 {
     font-size: 24px;
     margin: 1em;
 }
 
 main section:nth-of-type(5) h3 {
+    font-family: 'DINBlack', serif;
     font-size: 18px;
 }
 
@@ -306,77 +439,122 @@ main section:nth-of-type(5) ul {
 	display: flex;
 	overflow-x: auto;
 	scroll-behavior: smooth;
-	gap: 1em;
-	padding: 0.9375em;
-	background-color: var(--background-color1)
+	gap: 2em;
+    margin: 0.9375em; 
+    scroll-snap-type: x mandatory;
+	background-color: var(--background-color1);
+    border-radius: var(--borderradius-section);
 }
 
-/* IMAGE STYLING */
 main section:nth-of-type(5) li {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    width: 100%;
+    flex-shrink: 0;
+    padding: 0.9375em;
+    margin-bottom: 1em;
+    scroll-snap-align: center;
 }
 
-main section:nth-of-type(5) li > h3,
-main section:nth-of-type(5) li > img,
-main section:nth-of-type(5) li > time,
-main section:nth-of-type(5) li > p,
-main section:nth-of-type(5) li > a {
-    margin-bottom: 2em 1.5em; /* Adjust as needed */
+main section:nth-of-type(5) ul li > img:first-of-type {
+    grid-row-start: 1;
+    grid-column-start: 1;
+    height: 20em;
+    width: 100%;
+    object-fit: cover;
+    border-radius: var(--borderradius-section);
 }
 
-main section:nth-of-type(5) ul li h3 {
-    margin-top: 2.5em; /* Push text down to account for the image */
+main section:nth-of-type(5) ul li:first-of-type > img:first-of-type {
+    object-fit: contain;
 }
 
-main section:nth-of-type(5) p::after {
+main section:nth-of-type(5) li *:not(img, p:last-of-type) {
+    margin: 1em 0.9375em 0 0.9375em;
+}
+
+main section:nth-of-type(5) time {
+    grid-row-start: 2;
+    color: var(--background-color2);
+    font-weight: bold;
+}
+
+main section:nth-of-type(5) p:first-of-type::after {
 	content: "[...]";
 }
 
-main section:nth-of-type(5) img {
-	max-width: 21.5625em;
+main section:nth-of-type(5) p:last-of-type {
+    grid-row-start: 1;
+    grid-column-start: -1;
+    z-index: 1;
+    align-self:end;
+    justify-self: center;
 }
 
-main section:nth-of-type(5) > a:last-of-type {
-    background-color: var(--banner-background-color);
+main section:nth-of-type(5) ul li a {
+    font-family: 'DINBlack', serif;
+    font-size: 12px;
+    color: var(--text-color3);
+    align-self: flex-start;
+    margin-bottom: 1em;
 }
 
-main section:nth-of-type(5) > a:last-of-type {
+main section:nth-of-type(5) ul li a img {
+    max-width: 0.75em;
+    margin-left: 1em;
+}
+
+/* CARROUSEL BANNER */
+main section:nth-of-type(5) > a:last-of-type,
+main section:nth-of-type(5) p:last-of-type {
     color: var(--text-color1);
     background-color: var(--banner-background-color);
-	font-family: 'Special Elite', cursive;
-	font-size: 1.3em; 
-	font-weight: bold;
+    font-family: 'Special Elite', cursive;
+    font-size: 1.3em;
+    font-weight: bold;
     display: inline-block;
     position: relative;
     text-align: center;
-    width: max-content;
-	margin: 3em;
-    padding: 0.6em 0.3em;
+    width: fit-content;
 }
 
 main section:nth-of-type(5) > a:last-of-type::before,
-main section:nth-of-type(5) > a:last-of-type::after {
+main section:nth-of-type(5) p:last-of-type::before,
+main section:nth-of-type(5) > a:last-of-type::after,
+main section:nth-of-type(5) p:last-of-type::after {
     content: "";
     position: absolute;
     top: 0;
     bottom: 0;
+    background-size: auto 100%;
 }
 
-main section:nth-of-type(5) > a:last-of-type::before {
+main section:nth-of-type(5) > a:last-of-type::before,
+main section:nth-of-type(5) p:last-of-type::before {
     background-image: url('../images/gele-banner-links.png');
-	background-position: left;
-	background-size: auto 100%;
-	left: -0.3em;
-	width: 10px;
+    background-position: left;
+    left: -0.3em;
+    width: 0.625em;
 }
 
-main section:nth-of-type(5) > a:last-of-type::after {
-	background-image: url('../images/gele-banner-rechts.png');
-	background-position: right;
-	background-size: auto 100%;
-	right: -0.4em;
-	width: 10px;
+main section:nth-of-type(5) > a:last-of-type::after,
+main section:nth-of-type(5) p:last-of-type::after {
+    background-image: url('../images/gele-banner-rechts.png');
+    background-position: right;
+    right: -0.4em;
+    width: 0.625em;
+}
+
+main section:nth-of-type(5) > a:last-of-type {
+    /* height: 2em; */
+    width: fit-content;
+    margin: 3em;
+    padding: 0.6em 0.3em;
+}
+
+main section:nth-of-type(5) p:last-of-type {
+    height: 1.5em;
+    margin-bottom: 2em;
+    padding: 0.3em 0.3em;
 }
 
 /* SECTION 6 */
@@ -422,15 +600,13 @@ main section:nth-of-type(6) button {
 	font-family: 'Special Elite', cursive;
 	font-size: 1.3em; 
 	font-weight: bold;
-    display: grid;
-    place-items: center;
-    width: max-content;
-    height: 1.75em;
+    width: fit-content;
 	margin: 0.5em 0.5em 0.625em;
     padding: 0.6em 0.3em;
     border: none;
     position: absolute;
     bottom: -3.5em;
+    cursor: pointer;
 }
 
 main section:nth-of-type(6) button::before, 
@@ -446,7 +622,7 @@ main section:nth-of-type(6) button::before {
     background-position: left;
     background-size: auto 100%;
     left: -0.3em;
-    width: 10px;
+	width: 0.625em;
 }
 
 main section:nth-of-type(6) button::after {
@@ -454,5 +630,5 @@ main section:nth-of-type(6) button::after {
     background-position: right;
     background-size: auto 100%; 
     right: -0.4em; 
-    width: 10px;
+	width: 0.625em;
 }
