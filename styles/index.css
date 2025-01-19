@@ -369,9 +369,10 @@ main section:nth-of-type(4) ul li:nth-child(-n+3){
     border-radius: var(--borderradius-section);
 }
 
-main section:nth-of-type(4) ul li img {
+main section:nth-of-type(4) ul li svg {
     max-width: 4.5em;
     order: -1;
+    fill: var(--background-color2);
 }
 
 main section:nth-of-type(4) ul li h3 {
