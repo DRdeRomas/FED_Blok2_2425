@@ -233,11 +233,18 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="uitomst opdracht 1">
-
+  <img src="readme-images/drderomas.github.io_FED_Blok2_2425_.png" width="375px">
+  Navigatie met hamburger menu + Eerste section met animatie
+  <img src="readme-images/drderomas.github.io_FED_Blok2_2425_ (1).png>" width="375px">
+  Tweede section met algemene informatie
+  <img src="readme-images/drderomas.github.io_FED_Blok2_2425_ (2).png>" width="375px">
+  Derde section met afbeelding
+  <img src="readme-images/drderomas.github.io_FED_Blok2_2425_ (3).png>" width="375px">
+  
 
   ### Dit ging goed/Heb ik geleerd: 
   Korte omschrijving met plaatjes
+
 
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
 
