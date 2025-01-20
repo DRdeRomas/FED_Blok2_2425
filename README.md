@@ -237,7 +237,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 
   ### Dit ging goed/Heb ik geleerd: 
-  Korte omschrijving met plaatjes
+  Korte omschrijving met plaatjes:
 
   - Het maken van custom properties en een light-dark mode.
   - Ik heb geleerd hoe ik een foto als achtergrond kan gebruiken en deze niet direct in de HTML te benoemen.
@@ -252,8 +252,6 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Korte omschrijving met plaatjes
   - Het was moeilijk om een hamburger menu te gebruiken, vandaar ik gebruik maakte van de opdrachten bij CodePen. Ook het toevoegen van JavaScript. Hetzelfde geldt voor het kiezen van de opties bij de doneer pagina en het laten zien/verbergen van de informatie. 
   - Ik wilde nog een scroll-animatie toevoegen maar ik was er niet aan toe gekomen.
-
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
 </details>
 
 
