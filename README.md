@@ -79,8 +79,6 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   - Het is niet duidelijk dat de sectie van het laatste nieuws meerdere items nieuwsitems heeft.
 </details>
 
-
-
 ## Breakdownschets (week 1)
 
 <details>
@@ -97,8 +95,6 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <img src="readme-images/filter.png" width="375px" alt="Breakdown van de filteropties in de nieuwsberichten pagina"> <br>
 
 </details>
-
-
 
 ## Voortgang 1 (week 2)
 
@@ -133,8 +129,6 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   - Decoratieve foto's/iconen hoeven geen alt tekst, die mag je leeglaten.
 
 </details>
-
-
 
 ## Voortgang 2 (week 3)
 
@@ -240,17 +234,24 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <img src="readme-images/drderomas.github.io_FED_Blok2_2425_ (2).png>" width="375px">
   Derde section met afbeelding
   <img src="readme-images/drderomas.github.io_FED_Blok2_2425_ (3).png>" width="375px">
-  
+
 
   ### Dit ging goed/Heb ik geleerd: 
   Korte omschrijving met plaatjes
 
-
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
-
+  - Het maken van custom properties en een light-dark mode.
+  - Ik heb geleerd hoe ik een foto als achtergrond kan gebruiken en deze niet direct in de HTML te benoemen.
+  - Het gebruiken van ::before en ::after CSS selectors en deze juist stijlen voor de banner.
+  - Het veranderen van de kleur van SVG's. Deze was fijn, omdat ik de SVG's dezelfde kleur kon geven voor consistentie.
+  - Het maken van de carrousel was ook min of meer gelukt.
+  - Het toevoegen van een focus states.
+  - Het kiezen van opties bij de doneer pagina.
+  - Het toevoegen van een filmpje en het laten zien/verbergen van bepaalde informatie zonodig bij de laatste section bij de main.
 
   ### Dit was lastig/Is niet gelukt:
   Korte omschrijving met plaatjes
+  - Het was moeilijk om een hamburger menu te gebruiken, vandaar ik gebruik maakte van de opdrachten bij CodePen. Ook het toevoegen van JavaScript. Hetzelfde geldt voor het kiezen van de opties bij de doneer pagina en het laten zien/verbergen van de informatie. 
+  - Ik wilde nog een scroll-animatie toevoegen maar ik was er niet aan toe gekomen.
 
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
 </details>
